@@ -5,13 +5,14 @@ const ServiceCard = (props) => {
   const { title, img, description } = props.service;
   return (
     <>
-      <div className="card w-90 lg:w-96 bg-base-100 shadow-xl hover:shadow-2xl">
+      <div className="card lg:w-90 md:w-50 sm:w-66 bg-base-100 shadow-xl hover:shadow-2xl">
         <Link to="/">
           <figure>
             <img
               //   src="https://api.lorem.space/image/shoes?w=400&h=225"
               src={img}
               alt={title}
+              className="lg:w-full md:w-50  h-60"
             />
           </figure>
           <div className="card-body">
