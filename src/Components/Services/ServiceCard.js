@@ -5,7 +5,7 @@ const ServiceCard = (props) => {
   const { title, img, description } = props.service;
   return (
     <>
-      <div className="card lg:w-90 md:w-50 sm:w-66 bg-base-100 shadow-xl hover:shadow-2xl dark:bg-base-300">
+      <div className="card lg:w-90 md:w-50 sm:w-66 bg-base-100 shadow-xl hover:shadow-2xl ">
         <Link to="/">
           <figure>
             <img
@@ -16,11 +16,11 @@ const ServiceCard = (props) => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title text-2xl font-bold">
+            <h2 className="card-title text-2xl font-bold dark:text-white text-black">
               {title}
               {/* <div className="badge badge-secondary">NEW</div> */}
             </h2>
-            <p>{description.slice(0, 100)}</p>
+            <p className="text-black pt-2">{description.slice(0, 100)}</p>
           </div>
         </Link>
       </div>

@@ -7,7 +7,7 @@ const ServicesFatch = () => {
 
   useEffect(() => {
     fetch(
-      "https://raw.githubusercontent.com/ashikurrahmans/elite-dental-studio/main/services.json"
+      "https://raw.githubusercontent.com/ashikurrohman/boots-data/main/elite-services"
     )
       .then((res) => res.json())
       .then((data) => setServices(data));
