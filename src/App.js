@@ -9,6 +9,7 @@ import Menu from "./Components/Menu/Menu";
 import Footer from "./Components/Footer/Footer";
 import BlogSingle from "./Components/Blog/BlogSingle";
 import Blogs from "./Components/Blog/Blogs";
+import ServiceSingle from "./Components/Services/ServiceSingle";
 
 function App() {
   return (
@@ -19,6 +20,10 @@ function App() {
           <Route path="/about" element={<About></About>}></Route>
           <Route path="/blogs" element={<Blogs></Blogs>}></Route>
           <Route path="/blog/:id" element={<BlogSingle></BlogSingle>}></Route>
+          <Route
+            path="/service/:id"
+            element={<ServiceSingle></ServiceSingle>}
+          ></Route>
           <Route path="/services" element={<Services></Services>}></Route>
           <Route path="/contact" element={<Contact></Contact>}></Route>
           <Route path="*" element={<NotFound></NotFound>}></Route>

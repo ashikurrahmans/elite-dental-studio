@@ -2,11 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ServiceCard = (props) => {
-  const { title, img, description } = props.service;
+  const { id, title, img, description } = props.service;
   return (
     <>
       <div className="card lg:w-90 md:w-50 sm:w-66 bg-base-100 shadow-xl hover:shadow-2xl ">
-        <Link to="/">
+        <Link to={`service/${id}`}>
           <figure>
             <img
               //   src="https://api.lorem.space/image/shoes?w=400&h=225"
