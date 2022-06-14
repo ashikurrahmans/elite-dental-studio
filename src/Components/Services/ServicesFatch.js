@@ -7,7 +7,7 @@ const ServicesFatch = () => {
 
   useEffect(() => {
     fetch(
-      "https://raw.githubusercontent.com/ashikurrohman/boots-data/main/elite-services"
+      "https://raw.githubusercontent.com/ashikurrohman/boots-data/main/elite-services.json"
     )
       .then((res) => res.json())
       .then((data) => setServices(data));
