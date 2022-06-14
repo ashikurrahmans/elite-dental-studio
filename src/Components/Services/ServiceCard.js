@@ -5,7 +5,7 @@ const ServiceCard = (props) => {
   const { title, img, description } = props.service;
   return (
     <>
-      <div className="card lg:w-90 md:w-50 sm:w-66 bg-base-100 shadow-xl hover:shadow-2xl">
+      <div className="card lg:w-90 md:w-50 sm:w-66 bg-base-100 shadow-xl hover:shadow-2xl dark:bg-base-300">
         <Link to="/">
           <figure>
             <img
