@@ -8,7 +8,7 @@ const Blogs = () => {
   return (
     <>
       <PageTitle title="Our Blogs"></PageTitle>
-      <BredCumbs title="Our Services" bred={"Home > Articles"}></BredCumbs>
+      <BredCumbs home="Home" page="Blogs" url="/blogs"></BredCumbs>
 
       <div className="flex justify-between mx-auto bg-gray-100">
         <BlogLeft></BlogLeft>

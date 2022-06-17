@@ -60,7 +60,7 @@ const Menu = ({ children }) => {
                 <img
                   src={logo}
                   alt="Elite Dental Studio USA Logo"
-                  className="w-52 h-12"
+                  className="w-52 h-12 p-2"
                 />
               </Link>
             </div>
@@ -81,7 +81,7 @@ const Menu = ({ children }) => {
                 </svg>
               </label>
             </div>
-            <div className="flex-none hidden lg:block ">
+            <div className="flex-none hidden lg:block">
               <ul className="menu menu-horizontal">{menus}</ul>
             </div>
           </div>

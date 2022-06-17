@@ -6,7 +6,7 @@ const About = () => {
   return (
     <div>
       <PageTitle title="About"></PageTitle>
-      <BredCumbs title="About US" bred={"Home > About"}></BredCumbs>
+      <BredCumbs home="Home" page="About" url="/about"></BredCumbs>
       <div className="flex flex-col text-center w-full mb-20 mt-20">
         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
           About US

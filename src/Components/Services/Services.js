@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <div>
       <PageTitle title="Our Services"></PageTitle>
-      <BredCumbs title="Our Services" bred={"Home > Services"}></BredCumbs>
+      <BredCumbs home="Home" page="Services" url="/services"></BredCumbs>
       <section className="w-5/6 mx-auto">
         <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center mt-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">

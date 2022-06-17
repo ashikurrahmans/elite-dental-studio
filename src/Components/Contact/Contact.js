@@ -6,7 +6,7 @@ const Contact = () => {
   return (
     <div>
       <PageTitle title="Contact US"></PageTitle>
-      <BredCumbs title="Contact US" bred={"Home > Contact"}></BredCumbs>
+      <BredCumbs home="Home" page="Contact" url="/contact"></BredCumbs>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto">
           <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center">
