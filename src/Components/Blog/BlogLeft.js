@@ -4,7 +4,9 @@ import BlogCard from "./BlogCard";
 const BlogLeft = () => {
   return (
     <>
-      <BlogCard></BlogCard>
+      <div className="grid grid-rows-1">
+        <BlogCard></BlogCard>
+      </div>
     </>
   );
 };
