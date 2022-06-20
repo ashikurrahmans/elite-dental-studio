@@ -13,19 +13,29 @@ const Menu = ({ children }) => {
   const menus = (
     <>
       <li>
-        <NavLink to="/">Home</NavLink>
+        <Link to="/" className="hover:bg-white ">
+          Home
+        </Link>
       </li>
       <li>
-        <NavLink to="/about">About</NavLink>
+        <Link to="/about" className="hover:bg-white">
+          About
+        </Link>
       </li>
       <li>
-        <NavLink to="/blogs">Blog</NavLink>
+        <Link to="/blogs" className="hover:bg-white">
+          Blog
+        </Link>
       </li>
       <li>
-        <NavLink to="/services">Services</NavLink>
+        <Link to="/services" className="hover:bg-white">
+          Services
+        </Link>
       </li>
       <li>
-        <NavLink to="/contact">Contact</NavLink>
+        <Link to="/contact" className="hover:bg-white">
+          Contact
+        </Link>
       </li>
       <li>
         <label className="swap swap-rotate">
@@ -54,8 +64,8 @@ const Menu = ({ children }) => {
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* <!-- Navbar --> */}
-          <div className="w-full navbar bg-base-300">
-            <div className="flex-1 px-2 mx-2">
+          <div className=" navbar bg-white text-black sticky top-0 z-10">
+            <div className="flex-1 px-2 mx-2 ml-24">
               <Link to="/">
                 <img
                   src={logo}
@@ -82,7 +92,7 @@ const Menu = ({ children }) => {
               </label>
             </div>
             <div className="flex-none hidden lg:block">
-              <ul className="menu menu-horizontal">{menus}</ul>
+              <ul className="menu menu-horizontal text-xl mr-24">{menus}</ul>
             </div>
           </div>
           {/* <!-- Page content here --> */}

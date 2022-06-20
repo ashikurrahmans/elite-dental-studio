@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BlogCard = (props) => {
   return (
@@ -6,14 +7,19 @@ const BlogCard = (props) => {
       <div className=" px-4 mb-6 max-w-full sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 ">
         <div className="flex w-full h-full flex-wrap bg-gray-800 overflow-hidden rounded">
           <div className="w-2/6">
-            <img
-              className="object-cover h-full w-full"
-              src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
-            />
+            <Link to="/">
+              <img
+                className="object-cover h-full w-full"
+                src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2250&q=80"
+              />
+            </Link>
           </div>
           <div className="w-4/6 p-5">
             <h2 className="text-white leading-normal text-lg">
-              How To Boost Your Traffic Of Your Blog And Destroy The Competition
+              <Link to="/">
+                How To Boost Your Traffic Of Your Blog And Destroy The
+                Competition
+              </Link>
             </h2>
             <div className="flex flex-wrap justify-between items-center mt-6">
               <div className="inline-flex items-center">

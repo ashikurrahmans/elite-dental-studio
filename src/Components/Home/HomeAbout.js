@@ -10,7 +10,7 @@ const HomeAbout = () => {
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
               Elite Dental Studio USA
             </h1>
-            <p className="mb-8 leading-relaxed">
+            <p className="mb-8 leading-relaxed text-black">
               The leading lab authority on digital impressions. Founded in 1974,
               Pittman Dental Laboratory has built a reputation of quality and
               service utilizing the very best in technology. As a Family owned

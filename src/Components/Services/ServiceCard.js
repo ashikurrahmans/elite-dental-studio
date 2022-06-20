@@ -12,15 +12,15 @@ const ServiceCard = (props) => {
               //   src="https://api.lorem.space/image/shoes?w=400&h=225"
               src={img}
               alt={title}
-              className="lg:w-full md:w-50  h-60"
+              className="lg:w-full md:w-50 h-60"
             />
           </figure>
-          <div className="card-body">
-            <h2 className="card-title text-2xl font-bold dark:text-white text-black">
+          <div className="">
+            <h2 className=" text-xl font-bold dark:text-white text-black py-6 bg-[#CE8C41] text-center">
               {title}
               {/* <div className="badge badge-secondary">NEW</div> */}
             </h2>
-            <p className="text-black pt-2">{description.slice(0, 100)}</p>
+            {/* <p className="text-black pt-2">{description.slice(0, 100)}</p> */}
           </div>
         </Link>
       </div>
