@@ -64,13 +64,13 @@ const Menu = ({ children }) => {
         <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content flex flex-col">
           {/* <!-- Navbar --> */}
-          <div className=" navbar bg-white text-black sticky top-0 z-10">
-            <div className="flex-1 px-2 mx-2 ml-24">
+          <div className=" navbar bg-white text-black sticky top-0 z-10 py-10">
+            <div className="flex-1 px-2 mx-2 ml-24 lg:ml-40">
               <Link to="/">
                 <img
                   src={logo}
                   alt="Elite Dental Studio USA Logo"
-                  className="w-52 h-12 p-2"
+                  className="w-64 h-14 p-2"
                 />
               </Link>
             </div>
@@ -92,7 +92,9 @@ const Menu = ({ children }) => {
               </label>
             </div>
             <div className="flex-none hidden lg:block">
-              <ul className="menu menu-horizontal text-xl mr-24">{menus}</ul>
+              <ul className="menu menu-horizontal text-xl mr-24 lg:mr-40">
+                {menus}
+              </ul>
             </div>
           </div>
           {/* <!-- Page content here --> */}

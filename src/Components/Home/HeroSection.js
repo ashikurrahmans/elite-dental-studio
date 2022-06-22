@@ -1,10 +1,11 @@
 import React from "react";
+import heroBottomImage from "../../assets/images/Dentist-Illustration.png";
 
 const HeroSection = () => {
   return (
     <div>
-      <div className="bg-gray-600">
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-52">
+      <div className="bg-[#060606]">
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-52 lg:pb-96 md:pb-72">
           <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
             <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
               <a href="/" className="mb-6 sm:mx-auto">
@@ -49,13 +50,17 @@ const HeroSection = () => {
                         height="24"
                       />
                     </svg>
-                    <span className="relative">The</span>
+                    {/* <span className="relative">
+                      Welcome to <br />
+                    </span> */}
                   </span>
-                  quick, brown fox jumps over a lazy dog
+                  Elite Dental Studio USA
                 </h2>
                 <p className="text-base text-indigo-100 md:text-lg">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque rem aperiam, eaque ipsa quae.
+                  We know that your first priority is the happiness and
+                  satisfaction of your patients; furthermore, we know that you
+                  are looking for the best possible quality for your dental
+                  restorations
                 </p>
               </div>
               <div>
@@ -69,6 +74,9 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center -mt-96 ">
+        <img src={heroBottomImage} alt="Elite Dental Studio Hero" />
       </div>
     </div>
   );
