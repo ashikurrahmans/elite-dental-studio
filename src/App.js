@@ -14,22 +14,23 @@ import ServiceSingle from "./Components/Services/ServiceSingle";
 function App() {
   return (
     <div className="App">
-      <Menu>
-        <Routes>
-          <Route path="/" element={<Home></Home>}></Route>
-          <Route path="/about" element={<About></About>}></Route>
-          <Route path="/blogs" element={<Blogs></Blogs>}></Route>
-          <Route path="/blog/:id" element={<BlogSingle></BlogSingle>}></Route>
-          <Route
-            path="/service/:id"
-            element={<ServiceSingle></ServiceSingle>}
-          ></Route>
-          <Route path="/services" element={<Services></Services>}></Route>
-          <Route path="/contact" element={<Contact></Contact>}></Route>
-          <Route path="*" element={<NotFound></NotFound>}></Route>
-        </Routes>
-        <Footer></Footer>
-      </Menu>
+      {/* <Menu> */}
+      <Menu></Menu>
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/about" element={<About></About>}></Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
+        <Route path="/blog/:id" element={<BlogSingle></BlogSingle>}></Route>
+        <Route
+          path="/service/:id"
+          element={<ServiceSingle></ServiceSingle>}
+        ></Route>
+        <Route path="/services" element={<Services></Services>}></Route>
+        <Route path="/contact" element={<Contact></Contact>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
+      </Routes>
+      <Footer></Footer>
+      {/* </Menu> */}
     </div>
   );
 }
