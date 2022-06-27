@@ -75,7 +75,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center -mt-96 ">
+      <div className="flex items-center justify-center lg:-mt-96 md:-mg-96 sm:-mg-96">
         <img src={heroBottomImage} alt="Elite Dental Studio Hero" />
       </div>
     </div>

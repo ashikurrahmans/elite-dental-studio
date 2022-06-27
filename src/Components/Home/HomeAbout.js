@@ -18,7 +18,7 @@ const HomeAbout = () => {
               Patient, we vow to use only the highest quality materials and
               craftmanship because our success depends on your success.
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-12">
               <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
                 Know More
               </button>
@@ -26,7 +26,7 @@ const HomeAbout = () => {
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 ml-12">
             <img
-              className="object-cover object-center rounded"
+              className="object-cover object-center rounded "
               alt="hero"
               src="https://www.pittmandental.com/hubfs/Pittman%20-%20May%202019%20Folder/Images/9X2B8093.jpg"
             />

@@ -2,23 +2,53 @@ import { React, useRef } from "react";
 import PageTitle from "../PageTitle/PageTitle";
 import BredCumbs from "./../Shared/BredCumbs";
 import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const form = useRef();
+  // let form = useRef();
 
-  const sendEmail = (e) => {
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+
+  //   emailjs
+  //     .sendForm(
+  //       "service_pi7hzkr",
+  //       "template_c6y6nys",
+  //       form.current,
+  //       "UWPT-zbO6jI5U64NU"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
+
+  const fullName = useRef("");
+  const emails = useRef("");
+  const message = useRef("");
+  const handleForm = (e) => {
     e.preventDefault();
+    const fullNames = fullName.current.value;
+    const email = emails.current.value;
+    const messages = message.current.value;
+    const fullInfo = { fullNames, email, messages };
 
     emailjs
       .sendForm(
         "service_pi7hzkr",
         "template_c6y6nys",
-        form.current,
+        fullInfo.current,
         "UWPT-zbO6jI5U64NU"
       )
       .then(
         (result) => {
           console.log(result.text);
+          toast("Wow so easy!");
         },
         (error) => {
           console.log(error.text);
@@ -43,7 +73,7 @@ const Contact = () => {
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-lg">
+              <div className="border border-gray-200 p-6 rounded-lg bg-black text-white">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                   <svg
                     fill="none"
@@ -57,7 +87,7 @@ const Contact = () => {
                     <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
                   </svg>
                 </div>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
+                <h2 className="text-lg text-white font-medium title-font mb-2">
                   Contact Phone Number
                 </h2>
                 <p className="leading-relaxed text-base">1 (844) 686-5534</p>
@@ -67,7 +97,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-lg">
+              <div className="border border-gray-200 p-6 rounded-lg bg-black text-white">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                   <svg
                     fill="none"
@@ -83,7 +113,7 @@ const Contact = () => {
                     <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
                   </svg>
                 </div>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
+                <h2 className="text-lg  font-medium title-font mb-2 text-white">
                   Our Email Address
                 </h2>
                 <p className="leading-relaxed text-base">
@@ -95,7 +125,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="xl:w-1/3 md:w-1/2 p-4">
-              <div className="border border-gray-200 p-6 rounded-lg">
+              <div className="border border-gray-200 p-6 rounded-lg bg-black text-white">
                 <div className="w-10 h-10 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-4">
                   <svg
                     fill="none"
@@ -110,12 +140,12 @@ const Contact = () => {
                     <circle cx="12" cy="7" r="4"></circle>
                   </svg>
                 </div>
-                <h2 className="text-lg text-gray-900 font-medium title-font mb-2">
+                <h2 className="text-lg text-white font-medium title-font mb-2">
                   Our Address
                 </h2>
                 <p className="leading-relaxed text-base">
-                  2445 Hilton Drive, Suite 100B, Gainesville GA 30501, United
-                  State
+                  2445 Hilton Drive, Suite 100B, Gainesville <br /> GA 30501,
+                  United State
                 </p>
               </div>
             </div>
@@ -124,7 +154,7 @@ const Contact = () => {
       </section>
       <section className="text-gray-600 body-font relative">
         <div className="container px-5 pb-20 mx-auto flex sm:flex-nowrap flex-wrap">
-          <div className="lg:w-2/3 md:w-1/2 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+          <div className="lg:w-2/3 md:w-1/2 w-full h-96 bg-gray-300 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
             <iframe
               width="100%"
               height="100%"
@@ -134,29 +164,8 @@ const Contact = () => {
               marginheight="0"
               marginwidth="0"
               scrolling="no"
-              src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=%C4%B0zmir+(My%20Business%20Name)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3296.9078926467473!2d-83.84838328528049!3d34.2764008805455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5f6a7e6da0c47%3A0xafbf52cae6440d7f!2sElite%20Dental%20Studio%20USA!5e0!3m2!1sen!2sbd!4v1656321252293!5m2!1sen!2sbd"
             ></iframe>
-            {/* <div className="bg-white relative flex flex-wrap py-6 rounded shadow-md">
-              <div className="lg:w-1/2 px-6">
-                <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                  ADDRESS
-                </h2>
-                <p className="mt-1">
-                  Photo booth tattooed prism, portland taiyaki hoodie neutra
-                  typewriter
-                </p>
-              </div>
-              <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-                <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs">
-                  EMAIL
-                </h2>
-                <a className="text-indigo-500 leading-relaxed">example@email.com</a>
-                <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">
-                  PHONE
-                </h2>
-                <p className="leading-relaxed">123-456-7890</p>
-              </div>
-            </div> */}
           </div>
 
           <div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
@@ -166,7 +175,8 @@ const Contact = () => {
             <p className="leading-relaxed mb-5 text-gray-600">
               Post-ironic portland shabby chic echo park, banjo fashion axe
             </p>
-            <form ref={form} onSubmit={sendEmail}>
+            <form>
+              {/* ref={form} onSubmit={sendEmail} */}
               <div className="relative mb-4">
                 <label for="name" className="leading-7 text-sm text-gray-600">
                   Name
@@ -203,6 +213,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               <input
+                onClick={handleForm}
                 type="submit"
                 value="Submit"
                 className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg cursor-pointer"
@@ -211,6 +222,7 @@ const Contact = () => {
           </div>
         </div>
       </section>
+      <ToastContainer />
     </div>
   );
 };

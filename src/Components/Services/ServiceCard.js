@@ -9,14 +9,13 @@ const ServiceCard = (props) => {
         <Link to={`service/${id}`}>
           <figure>
             <img
-              //   src="https://api.lorem.space/image/shoes?w=400&h=225"
               src={img}
               alt={title}
-              className="lg:w-full md:w-50 h-60"
+              className="lg:w-full md:w-full sm:w-full w-full h-60 "
             />
           </figure>
           <div className="">
-            <h2 className=" text-xl font-bold dark:text-white text-black py-6 bg-[#CE8C41] text-center">
+            <h2 className=" text-xl font-bold dark:text-white text-black py-8 bg-[#CE8C41] text-center">
               {title}
               {/* <div className="badge badge-secondary">NEW</div> */}
             </h2>
