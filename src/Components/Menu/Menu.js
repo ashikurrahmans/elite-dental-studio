@@ -96,11 +96,11 @@ const Menu = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <label class="swap swap-rotate">
+                <label className="swap swap-rotate">
                   <input type="checkbox" />
 
                   <svg
-                    class="swap-on fill-current w-7 h-7 ml-6 mt-0.5 text-black "
+                    className="swap-on fill-current w-7 h-7 ml-6 mt-0.5 text-black "
                     id=""
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -109,7 +109,7 @@ const Menu = () => {
                   </svg>
 
                   <svg
-                    class="swap-off fill-current w-7 h-7 ml-6 mt-0.5 text-black"
+                    className="swap-off fill-current w-7 h-7 ml-6 mt-0.5 text-black"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                   >
