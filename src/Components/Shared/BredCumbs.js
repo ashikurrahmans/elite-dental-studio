@@ -5,7 +5,7 @@ const BredCumbs = ({ home, page, url }) => {
   return (
     <nav
       aria-label="breadcrumb"
-      className="w-full p-4 dark:bg-white-800 dark:text-gray-100 bg-indigo-700 bg-center py-4"
+      className="w-full p-4 dark:bg-white-800 dark:text-gray-100 bg-indigo-700 bg-center py-4 text-white"
     >
       <ol className="flex h-8 space-x-2">
         <li className="flex items-center">
