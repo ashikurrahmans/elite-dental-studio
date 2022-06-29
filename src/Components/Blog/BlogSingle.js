@@ -19,21 +19,21 @@ const BlogSingle = () => {
   return (
     <div>
       <BredCumbs home="Home" page="Blogs" url="/blogs"></BredCumbs>
-      <div class="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 relative">
-        <div class="mb-4 w-10/12 mx-auto">
+      <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16 relative">
+        <div className="mb-4 w-10/12 mx-auto">
           <Link to="">
             <h1
               href="#"
-              class="text-gray-900 font-bold text-5xl mb-2 text-center"
+              className="text-gray-900 font-bold text-5xl mb-2 text-center"
             >
               Revenge of the Never Trumpers
             </h1>
           </Link>
-          <main class="px-4 lg:px-8 z-10 max-w-3xl mx-auto">
-            <div class="py-5 text-sm font-regular text-white flex items-center justify-center">
-              <span class="mr-3 flex flex-row items-center">
+          <main className="px-4 lg:px-8 z-10 max-w-3xl mx-auto">
+            <div className="py-5 text-sm font-regular text-white flex items-center justify-center">
+              <span className="mr-3 flex flex-row items-center">
                 <svg
-                  class="text-indigo-600"
+                  className="text-indigo-600"
                   fill="currentColor"
                   height="13px"
                   width="13px"
@@ -54,14 +54,14 @@ const BlogSingle = () => {
                     </g>
                   </g>
                 </svg>
-                <span class="ml-1 text-black">6 mins ago</span>
+                <span className="ml-1 text-black">6 mins ago</span>
               </span>
               <a
                 href="#"
-                class="flex flex-row items-center hover:text-indigo-600  mr-3"
+                className="flex flex-row items-center hover:text-indigo-600  mr-3"
               >
                 <svg
-                  class="text-indigo-600"
+                  className="text-indigo-600"
                   fill="currentColor"
                   height="16px"
                   aria-hidden="true"
@@ -76,14 +76,14 @@ const BlogSingle = () => {
                   ></path>
                   <path d="M0 0h24v24H0z" fill="none"></path>
                 </svg>
-                <span class="ml-1 text-black">AliSher Azimi</span>
+                <span className="ml-1 text-black">AliSher Azimi</span>
               </a>
               <a
                 href="#"
-                class="flex flex-row items-center hover:text-indigo-600"
+                className="flex flex-row items-center hover:text-indigo-600"
               >
                 <svg
-                  class="text-indigo-600"
+                  className="text-indigo-600"
                   fill="currentColor"
                   height="16px"
                   aria-hidden="true"
@@ -96,25 +96,25 @@ const BlogSingle = () => {
                     d="M15.4496399,8.42490555 L8.66109799,1.63636364 L1.63636364,1.63636364 L1.63636364,8.66081885 L8.42522727,15.44178 C8.57869221,15.5954158 8.78693789,15.6817418 9.00409091,15.6817418 C9.22124393,15.6817418 9.42948961,15.5954158 9.58327627,15.4414581 L15.4486339,9.57610048 C15.7651495,9.25692435 15.7649133,8.74206554 15.4496399,8.42490555 Z M16.6084423,10.7304545 L10.7406818,16.59822 C10.280287,17.0591273 9.65554997,17.3181054 9.00409091,17.3181054 C8.35263185,17.3181054 7.72789481,17.0591273 7.26815877,16.5988788 L0.239976954,9.57887876 C0.0863319284,9.4254126 0,9.21716044 0,9 L0,0.818181818 C0,0.366312477 0.366312477,0 0.818181818,0 L9,0 C9.21699531,0 9.42510306,0.0862010512 9.57854191,0.239639906 L16.6084423,7.26954545 C17.5601275,8.22691012 17.5601275,9.77308988 16.6084423,10.7304545 Z M5,6 C4.44771525,6 4,5.55228475 4,5 C4,4.44771525 4.44771525,4 5,4 C5.55228475,4 6,4.44771525 6,5 C6,5.55228475 5.55228475,6 5,6 Z"
                   ></path>
                 </svg>
-                <span class="ml-1 text-black">activewear</span>
+                <span className="ml-1 text-black">activewear</span>
               </a>
             </div>
           </main>
         </div>
 
         <div
-        // class="bg-cover h-64 text-center overflow-hidden "
+        // className="bg-cover h-64 text-center overflow-hidden "
         // Style="height: 450px; background-image: url('https://api.time.com/wp-content/uploads/2020/07/never-trumpers-2020-election-01.jpg?quality=85&w=1201&h=676&crop=1')"
         // title="Woman holding a mug"
         ></div>
 
         <div className="flex justify-center items-center mb-12 gap-4">
           <span className="text-2xl font-bold">Tags : </span>
-          <button class="btn btn-sm">Small</button>
-          <button class="btn btn-sm">Small</button>
-          <button class="btn btn-sm">Small</button>
-          <button class="btn btn-sm">Small</button>
-          <button class="btn btn-sm">Small</button>
+          <button className="btn btn-sm">Small</button>
+          <button className="btn btn-sm">Small</button>
+          <button className="btn btn-sm">Small</button>
+          <button className="btn btn-sm">Small</button>
+          <button className="btn btn-sm">Small</button>
         </div>
         <div>
           <img
@@ -123,10 +123,10 @@ const BlogSingle = () => {
             alt=""
           />
         </div>
-        <div class="w-10/12 mx-auto">
-          <div class="mt-3 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
-            <div class="">
-              <p class="text-base leading-8 my-5">
+        <div className="w-10/12 mx-auto">
+          <div className="mt-3 bg-white rounded-b lg:rounded-b-none lg:rounded-r flex flex-col justify-between leading-normal">
+            <div className="">
+              <p className="text-base leading-8 my-5">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -138,8 +138,10 @@ const BlogSingle = () => {
                 publishing software like Aldus PageMaker including versions of
                 Lorem Ipsum.
               </p>
-              <h3 class="text-2xl font-bold my-5">#1. What is Lorem Ipsum?</h3>
-              <p class="text-base leading-8 my-5">
+              <h3 className="text-2xl font-bold my-5">
+                #1. What is Lorem Ipsum?
+              </h3>
+              <p className="text-base leading-8 my-5">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -151,12 +153,12 @@ const BlogSingle = () => {
                 publishing software like Aldus PageMaker including versions of
                 Lorem Ipsum.
               </p>
-              <blockquote class="text-md italic leading-8 my-5 p-5 text-indigo-600 font-semibold">
+              <blockquote className="text-md italic leading-8 my-5 p-5 text-indigo-600 font-semibold">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s
               </blockquote>
-              <p class="text-base leading-8 my-5">
+              <p className="text-base leading-8 my-5">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -170,35 +172,35 @@ const BlogSingle = () => {
               </p>
               <a
                 href="#"
-                class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
+                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
               >
                 #Election
               </a>
               ,{" "}
               <a
                 href="#"
-                class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
+                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
               >
                 #people
               </a>
               ,{" "}
               <a
                 href="#"
-                class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
+                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
               >
                 #Election2020
               </a>
               ,{" "}
               <a
                 href="#"
-                class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
+                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
               >
                 #trump
               </a>
               ,
               <a
                 href="#"
-                class="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
+                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
               >
                 #Joe
               </a>

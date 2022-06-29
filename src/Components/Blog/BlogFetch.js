@@ -11,6 +11,7 @@ const BlogFetch = () => {
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   });
+
   return (
     <>
       <div className="space-y-2 text-center">
