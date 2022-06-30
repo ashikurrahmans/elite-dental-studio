@@ -14,7 +14,6 @@ import ServiceSingle from "./Components/Services/ServiceSingle";
 function App() {
   return (
     <div className="App">
-      {/* <Menu> */}
       <Menu></Menu>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>

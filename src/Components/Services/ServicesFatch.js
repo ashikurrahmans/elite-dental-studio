@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import HomeTitles from "../Home/HomeTitles";
-import ServiceCard from "./ServiceCard";
+import HomeServiceCard from "./HomeServiceCard";
 
 const ServicesFatch = () => {
   const [services, setServices] = useState([]);
@@ -22,7 +22,7 @@ const ServicesFatch = () => {
       ></HomeTitles>
       <div className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 lg:gap-12 md:gap-8 sm:gap-6 gap-4 gap-y-8">
         {services.map((service) => (
-          <ServiceCard service={service} key={service.id}></ServiceCard>
+          <HomeServiceCard service={service} key={service.id}></HomeServiceCard>
         ))}
       </div>
     </>

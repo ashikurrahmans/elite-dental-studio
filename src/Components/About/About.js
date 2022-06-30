@@ -7,11 +7,11 @@ const About = () => {
     <div>
       <PageTitle title="About"></PageTitle>
       <BredCumbs home="Home" page="About" url="/about"></BredCumbs>
-      <div className="flex flex-col text-center w-full mb-20 mt-20">
+      <div className="flex flex-col text-center  mb-20 mt-20 w-9/12 mx-auto">
         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
           About US
         </h1>
-        <p className="lg:w-2/3 mx-auto leading-relaxed text-base ml-6 mr-6">
+        <p className="leading-relaxed text-base ml-6 mr-6">
           Elite Dental Lab USA provides a variety of products and services such
           as all ceramics, implants, and veneers. We specialize in beautiful
           full mouth reconstruction cases. Our team is highly educated and
@@ -22,6 +22,7 @@ const About = () => {
           strict gold standard from start to finish.
         </p>
       </div>
+
       <section className="text-gray-600 body-font">
         <div className="container mx-auto flex px-5 md:flex-row flex-col ">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">

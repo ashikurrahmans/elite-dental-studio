@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import BredCumbs from "../Shared/BredCumbs";
+import DisqusComment from "./DisqusComment";
 
 const BlogSingle = () => {
   const { id } = useParams();
@@ -170,42 +171,12 @@ const BlogSingle = () => {
                 publishing software like Aldus PageMaker including versions of
                 Lorem Ipsum.
               </p>
-              <a
-                href="#"
-                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-              >
-                #Election
-              </a>
-              ,{" "}
-              <a
-                href="#"
-                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-              >
-                #people
-              </a>
-              ,{" "}
-              <a
-                href="#"
-                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-              >
-                #Election2020
-              </a>
-              ,{" "}
-              <a
-                href="#"
-                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-              >
-                #trump
-              </a>
-              ,
-              <a
-                href="#"
-                className="text-xs text-indigo-600 font-medium hover:text-gray-900 transition duration-500 ease-in-out"
-              >
-                #Joe
-              </a>
             </div>
           </div>
+        </div>
+
+        <div className="w-9/12 mx-auto">
+          <DisqusComment></DisqusComment>
         </div>
       </div>
     </div>
