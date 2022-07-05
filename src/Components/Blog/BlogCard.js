@@ -5,7 +5,7 @@ const BlogCard = (props) => {
   const { id, title, img, category } = props.blog;
   return (
     <>
-      <section className=" sm:py-12 dark:bg-gray-800 dark:text-gray-100">
+      <section className="sm:py-12 dark:bg-gray-800 dark:text-gray-100">
         <div className="p-2 mx-auto ">
           <article className="flex flex-col dark:bg-gray-900 shadow-xl">
             <Link
@@ -14,7 +14,7 @@ const BlogCard = (props) => {
               aria-label="Te nulla oportere reprimique his dolorum"
             >
               <img
-                alt=""
+                alt={title}
                 className="object-cover w-full h-52 dark:bg-gray-500"
                 src={img}
               />

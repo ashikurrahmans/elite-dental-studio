@@ -6,7 +6,7 @@ const HomeServiceCard = (props) => {
   return (
     <>
       <div className="card lg:w-90 md:w-50 sm:w-66 bg-base-100 shadow-xl hover:shadow-2xl ">
-        <Link to={`service/${id}`}>
+        <Link to={`services/${id}`}>
           <figure>
             <img
               src={serviceImg}

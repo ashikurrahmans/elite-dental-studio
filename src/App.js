@@ -21,7 +21,7 @@ function App() {
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/blogs/:id" element={<BlogSingle></BlogSingle>}></Route>
         <Route
-          path="/service/:id"
+          path="/services/:id"
           element={<ServiceSingle></ServiceSingle>}
         ></Route>
         <Route path="/services" element={<Services></Services>}></Route>
@@ -29,7 +29,6 @@ function App() {
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
-      {/* </Menu> */}
     </div>
   );
 }

@@ -4,16 +4,16 @@ const WhyChooseUs = () => {
   return (
     <div>
       <section className="text-gray-600 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container px-5 py-12 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-black">
-              Why you should choose Elite Dental Studio USA?
+              Improve Your Dental Practice
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them man bun deep jianbing selfies heirloom prism
-              food truck ugh squid celiac humblebrag.
+              Elite Dental Studio is devoted to assisting dentists with all
+              aspects of their cases. For instance, it includes hybrid implant
+              dentures, dental implants for seniors, implant crowns, and other
+              products.
             </p>
           </div>
           <div className="flex flex-wrap -m-4 text-center">

@@ -10,7 +10,7 @@ const BlogFetch = () => {
     )
       .then((res) => res.json())
       .then((data) => setBlogs(data));
-  });
+  }, []);
 
   return (
     <>

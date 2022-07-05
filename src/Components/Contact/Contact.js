@@ -6,52 +6,24 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  // let form = useRef();
+  let form = useRef();
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       "service_pi7hzkr",
-  //       "template_c6y6nys",
-  //       form.current,
-  //       "UWPT-zbO6jI5U64NU"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
-
-  const fullName = useRef("");
-  const emails = useRef("");
-  const message = useRef("");
-  const handleForm = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    const fullNames = fullName.current.value;
-    const email = emails.current.value;
-    const messages = message.current.value;
-    const fullInfo = { fullNames, email, messages };
 
     emailjs
       .sendForm(
         "service_pi7hzkr",
         "template_c6y6nys",
-        fullInfo.current,
+        form.current,
         "UWPT-zbO6jI5U64NU"
       )
       .then(
         (result) => {
-          console.log(result.text);
-          toast("Wow so easy!");
+          toast.success("Sending Email");
         },
         (error) => {
-          console.log(error.text);
+          toast.error("Sending Failed");
         }
       );
   };
@@ -175,10 +147,12 @@ const Contact = () => {
             <p className="leading-relaxed mb-5 text-gray-600">
               Post-ironic portland shabby chic echo park, banjo fashion axe
             </p>
-            <form>
-              {/* ref={form} onSubmit={sendEmail} */}
+            <form ref={form} onSubmit={sendEmail}>
               <div className="relative mb-4">
-                <label for="name" className="leading-7 text-sm text-gray-600">
+                <label
+                  htmlFor="name"
+                  className="leading-7 text-sm text-gray-600"
+                >
                   Name
                 </label>
                 <input
@@ -189,7 +163,10 @@ const Contact = () => {
                 />
               </div>
               <div className="relative mb-4">
-                <label for="email" className="leading-7 text-sm text-gray-600">
+                <label
+                  htmlFor="email"
+                  className="leading-7 text-sm text-gray-600"
+                >
                   Email
                 </label>
                 <input
@@ -201,7 +178,7 @@ const Contact = () => {
               </div>
               <div className="relative mb-4">
                 <label
-                  for="message"
+                  htmlFor="message"
                   className="leading-7 text-sm text-gray-600"
                 >
                   Message
@@ -213,7 +190,7 @@ const Contact = () => {
                 ></textarea>
               </div>
               <input
-                onClick={handleForm}
+                // onClick={handleForm}
                 type="submit"
                 value="Submit"
                 className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg cursor-pointer"
