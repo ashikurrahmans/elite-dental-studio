@@ -7,12 +7,18 @@ const ImageGallery = () => {
         <div className="container px-5  mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              Master Cleanse Reliac Heirloom
+              Helping Doctors to Restore Patients’ Smiles
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-              gentrify, subway tile poke farm-to-table. Franzen you probably
-              haven't heard of them man bun deep jianbing selfies heirloom.
+              Founded on the mastery of aesthetic dental restorations, Elite
+              Dental Studio's objective is to achieve natural aesthetics and
+              excellent performance with each restoration we design. Whether a
+              case calls for crowns, custom abutments, veneers, or implant
+              restorations, our first aim is to assist our dentists in
+              satisfying their patients by achieving the optimal balance between
+              design and functionality. Because smiles matter, we dedicate
+              ourselves to our legacy of collaborating with our customers to
+              ensure their success.
             </p>
           </div>
           <div className="flex flex-wrap -m-4">

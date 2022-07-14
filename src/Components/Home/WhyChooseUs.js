@@ -7,13 +7,15 @@ const WhyChooseUs = () => {
         <div className="container px-5 py-12 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-black">
-              Improve Your Dental Practice
+              Improve Your Dental Practice Using Modern Laboratories
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Elite Dental Studio is devoted to assisting dentists with all
-              aspects of their cases. For instance, it includes hybrid implant
-              dentures, dental implants for seniors, implant crowns, and other
-              products.
+              Elite Dental Studio USA is devoted to assisting dentists with all
+              aspects of their cases. For instance, single to full arch implant
+              restorations, veneers, implant custom abutments, and other elite
+              products. Through a combination of technology and workmanship,
+              we're able to provide bespoke fits that suit the precise needs of
+              your patients.
             </p>
           </div>
           <div className="flex flex-wrap -m-4 text-center">

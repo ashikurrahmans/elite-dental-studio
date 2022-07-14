@@ -12,8 +12,8 @@ const Home = () => {
       <PageTitle title="Best Dental Services"></PageTitle>
       <HeroSection></HeroSection>
       <Service></Service>
-      <Faq></Faq>
       <WhyChooseUs></WhyChooseUs>
+      <Faq></Faq>
       <ImageGallery></ImageGallery>
     </>
   );
