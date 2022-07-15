@@ -5,7 +5,7 @@ const WhyChooseUs = () => {
     <div>
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-12 mx-auto">
-          <div className="flex flex-col text-center w-full mb-20">
+          <div className="flex flex-col text-center w-full my-24">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-black">
               Improve Your Dental Practice Using Modern Laboratories
             </h1>

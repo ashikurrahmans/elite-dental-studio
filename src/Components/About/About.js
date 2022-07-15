@@ -12,14 +12,13 @@ const About = () => {
           About US
         </h1>
         <p className="leading-relaxed text-base ml-6 mr-6">
-          Elite Dental Lab USA provides a variety of products and services such
-          as all ceramics, implants, and veneers. We specialize in beautiful
-          full mouth reconstruction cases. Our team is highly educated and
-          constantly up to date with the advancements in dental artistry,
-          product materials, and digital dentistry. Hex dental lab’s attention
-          to detail comes close to none. Designing each case with the individual
-          attention it requires. Every step of the fabrication process follows a
-          strict gold standard from start to finish.
+          Gainesville, also renowned as the Queen City of the Mountains and the
+          Poultry Capital, was recently named the "Hospitality Capital of the
+          World" after it hosted the 1996 Olympic rowing and kayaking
+          competitions. The 38,000-acre Lake Sidney Lanier provides several
+          recreational activities, such as the rental of canoes and kayaks at
+          the Olympic Venue. Every year, the Petit LeMans is held at Road
+          Atlanta, a world-renowned street racing track.
         </p>
       </div>
 
@@ -41,24 +40,16 @@ const About = () => {
               CEO Elite Dental Studio LLC in Atlanta
             </h2>
             <p className="mb-8 leading-relaxed">
-              Edgar Munoz is the owner of Elite Dental Studio in Georgia. With
-              over 18 years of experience, his expertise spans the fields of
-              crown and bridge, implant restorations, and Digital Dentistry . He
-              has continued his education by attending numerous courses and
-              workshops all over the US and around the world. Also, Mr. Munoz is
-              a member of the Dental Technicians Guild. Very early in his career
-              he was recognized for his sharp eye and a unique talent for
-              contouring with extraordinary detail and precision. These
-              impressive skills have been sharpened through his collaboration
-              with some of the finest dental laboratory professionals. In 2012,
-              he was recognized by the LMT magazine as one of the “Forty Under
-              Forty” best dental Techs in the US. Today, Mr. Munoz caters to
-              dentist-clients who share his vision of beautiful esthetics, and
-              offers them personalized services, such as chairside custom
-              staining and in-office Cad Cam design. He currently resides in
-              Gainesville, GA, and with his commitment to the highest standards
-              of cosmetic dentistry, he provides his services to many dentists
-              around the World .
+              Owner of the Elite Dental Studio USA in Georgia, Edgar Munoz, has
+              been a renowned figure in the dental industry. Named one of the
+              "Forty Under Forty" top dental technicians in the US by the LMT
+              magazine in 2012, Mr. Munoz provides individualized services to
+              dentist clientele who share his ideal of excellent esthetics. His
+              competence in digital dentistry, implant restorations, and crown
+              and bridge encompasses more than 18 years of experience. He has
+              extended his education by participating in several workshops and
+              courses across the US and abroad. Additionally, Mr. Munoz belongs
+              to the Dental Technicians Guild.
             </p>
           </div>
         </div>
@@ -68,13 +59,15 @@ const About = () => {
         <div className="container mx-auto flex px-5  md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
-              Know how does it works
+              Our Promise
             </h1>
             <p className="mb-8 leading-relaxed w-5/6">
-              Copper mug try-hard pitchfork pour-over freegan heirloom neutra
-              air plant cold-pressed tacos poke beard tote bag. Heirloom echo
-              park mlkshk tote bag selvage hot chicken authentic tumeric
-              truffaut hexagon try-hard chambray.
+              Elite Dental Studio USA believes every client should access the
+              best quality treatment. Thus, with us as your partner, it is
+              always possible to provide patients with beautiful smiles and the
+              most effective treatment. Indeed our advanced digital process and
+              production efficiencies enable us to offer first-rate restorations
+              created from the best quality materials at an affordable price.
             </p>
             <div className="flex justify-center mb-6">
               <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
@@ -105,12 +98,12 @@ const About = () => {
         <div className="container px-5 pb-24 mx-auto">
           <div className="text-center mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
-              Raw Denim Heirloom Man Braid
+              Advantages Of Elite Dental Studio USA
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
-              Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-              taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh
-              mi pug.
+              Elite Dental Studio features a full-service laboratory with the
+              skills, knowledge, and dedication to aid in the success of your
+              practice.
             </p>
             <div className="flex mt-6 justify-center">
               <div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
@@ -133,12 +126,11 @@ const About = () => {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  Shooting Stars
+                  Best Customer Service
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.
+                  Our top priority is customer service of the highest caliber,
+                  and we attempt to offer our clients a smooth experience.
                 </p>
                 <a className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
@@ -174,12 +166,11 @@ const About = () => {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  The Catalyzer
+                  Experienced Professional
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.
+                  We have experienced professionals who have experience in major
+                  restorative cases and offer the best to you.
                 </p>
                 <a className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More
@@ -214,12 +205,11 @@ const About = () => {
               </div>
               <div className="flex-grow">
                 <h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-                  Neptune
+                  Highly-Equipped Lab
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.
+                  We have the latest infrastructure, tools, and technology to
+                  provide your clinic with consistent, high-quality results.
                 </p>
                 <a className="mt-3 text-indigo-500 inline-flex items-center">
                   Learn More

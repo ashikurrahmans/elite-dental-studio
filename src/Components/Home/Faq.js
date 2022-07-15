@@ -3,8 +3,8 @@ import React from "react";
 const Faq = () => {
   return (
     <>
-      <section className="dark:bg-gray-800 dark:text-gray-100  my-12">
-        <div className="container flex flex-col justify-center p-4 mx-auto md:p-8">
+      <section className="dark:bg-gray-800 dark:text-gray-100">
+        <div className="container flex flex-col justify-center p-4 mx-auto md:p-8 my-24">
           <h2 className="mb-12 text-4xl font-bold leading-none text-center sm:text-5xl">
             Frequently Asked Questions
           </h2>
