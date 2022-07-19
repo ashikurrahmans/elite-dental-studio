@@ -1,4 +1,8 @@
 import React from "react";
+import crownAndBridge from "../../../src/assets/HomeGalleryImages/Crown_and_bridge.jpg";
+import implantRestoration from "../../../src/assets/HomeGalleryImages/Implant_Restoration.jpg";
+import CustomShadeService from "../../../src/assets/HomeGalleryImages/Custtom_Shade_Service.jpg";
+import Veeners from "../../../src/assets/HomeGalleryImages/Veeners.png";
 
 const ImageGallery = () => {
   return (
@@ -25,13 +29,13 @@ const ImageGallery = () => {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
-                  alt="gallery"
+                  alt="Crown And Bridge"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://www.elitedentalstudiousa.com/wp-content/uploads/2021/12/IMG_5120-1.png"
+                  src={crownAndBridge}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
+                    Crown And Bridge
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     Shooting Stars
@@ -46,13 +50,13 @@ const ImageGallery = () => {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
-                  alt="gallery"
+                  alt="Implant Restoration"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://www.elitedentalstudiousa.com/wp-content/uploads/2021/12/DSC_0310-1.jpg"
+                  src={implantRestoration}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
+                    Implant Restoration
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     The Catalyzer
@@ -67,13 +71,13 @@ const ImageGallery = () => {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
-                  alt="gallery"
+                  alt="Custom Shade Service"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://www.elitedentalstudiousa.com/wp-content/uploads/2021/12/DSC_0296-1.jpg"
+                  src={CustomShadeService}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
+                    Custom Shade Service
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     The 400 Blows
@@ -88,13 +92,13 @@ const ImageGallery = () => {
             <div className="lg:w-1/3 sm:w-1/2 p-4">
               <div className="flex relative">
                 <img
-                  alt="gallery"
+                  alt="Veeners"
                   className="absolute inset-0 w-full h-full object-cover object-center"
-                  src="https://www.elitedentalstudiousa.com/wp-content/uploads/2021/12/DSC_0042-1.jpg"
+                  src={Veeners}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
                   <h2 className="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">
-                    THE SUBTITLE
+                    Veeners
                   </h2>
                   <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
                     Neptune

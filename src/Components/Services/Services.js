@@ -22,9 +22,6 @@ const Services = () => {
         </div>
 
         <ServiceItem></ServiceItem>
-        <ServiceItem></ServiceItem>
-        <ServiceItem></ServiceItem>
-        <ServiceItem></ServiceItem>
       </section>
     </div>
   );

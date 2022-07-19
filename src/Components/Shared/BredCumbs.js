@@ -53,13 +53,13 @@ const BredCumbs = ({ home, page, url }) => {
           >
             <path d="M32 30.031h-32l16-28.061z"></path>
           </svg>
-          <Link
+          <a
             rel="noopener noreferrer"
-            to={url}
+            href={url}
             className="flex items-center px-1 capitalize hover:underline"
           >
             {page}
-          </Link>
+          </a>
         </li>
       </ol>
     </nav>

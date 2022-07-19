@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BredCumbs from "../Shared/BredCumbs";
 import PageTitle from "./../PageTitle/PageTitle";
 
@@ -75,15 +76,15 @@ const About = () => {
               </button>
             </div>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0">
-            {/* <img
-              className="object-cover object-center rounded"
+          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 md:mb-0 relative">
+            <img
+              className="object-cover object-center absolute w-full h-80 hover:cursor-pointer"
               alt="hero"
-              src="https://dummyimage.com/720x600"
-            /> */}
+              src="https://fbutube.com/media/images/play_button/play_button_added.webp"
+            />
             <div className="video-responsive">
               <iframe
-                className="w-full h-80"
+                className="w-full h-80 "
                 src="https://www.youtube.com/embed/d4V3qheys0s"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -172,7 +173,10 @@ const About = () => {
                   We have experienced professionals who have experience in major
                   restorative cases and offer the best to you.
                 </p>
-                <a className="mt-3 text-indigo-500 inline-flex items-center">
+                <Link
+                  to="/about"
+                  className="mt-3 text-indigo-500 inline-flex items-center"
+                >
                   Learn More
                   <svg
                     fill="none"
@@ -185,7 +189,7 @@ const About = () => {
                   >
                     <path d="M5 12h14M12 5l7 7-7 7"></path>
                   </svg>
-                </a>
+                </Link>
               </div>
             </div>
             <div className="p-4 md:w-1/3 flex flex-col text-center items-center">

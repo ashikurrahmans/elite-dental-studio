@@ -12,7 +12,7 @@ const Menu = () => {
       className=""
       style={{ margin: "0 auto", marginTop: "20px", marginButton: "20px" }}
     >
-      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-white">
+      <nav className="relative flex flex-wrap items-center justify-between px-2 py-3 bg-[#060606]">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link to="/">
@@ -38,23 +38,23 @@ const Menu = () => {
               <li className="nav-item">
                 <Link
                   to="/"
-                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-black hover:opacity-75"
                   href="#pablo"
                 >
-                  <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
-                  <span className="ml-2 text-black text-xl font-bold ">
+                  <i className="fab fa-facebook-square text-lg leading-lg  opacity-75"></i>
+                  <span className="ml-2 text-white text-xl font-bold ">
                     Home
                   </span>
                 </Link>
               </li>
-              <li className="nav-item">
+              <li className="nav-item ">
                 <Link
                   to="/about"
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
-                  <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
-                  <span className="ml-2 text-black text-xl font-bold ">
+                  <i className="fab fa-facebook-square text-lg leading-lg  opacity-75"></i>
+                  <span className="ml-2 text-white text-xl font-bold ">
                     About
                   </span>
                 </Link>
@@ -65,8 +65,8 @@ const Menu = () => {
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
-                  <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
-                  <span className="ml-2 text-black text-xl font-bold ">
+                  <i className="fab fa-facebook-square text-lg leading-lg  opacity-75"></i>
+                  <span className="ml-2 text-white text-xl font-bold ">
                     Blog
                   </span>
                 </Link>
@@ -77,8 +77,8 @@ const Menu = () => {
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
-                  <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
-                  <span className="ml-2 text-black text-xl font-bold ">
+                  <i className="fab fa-facebook-square text-lg leading-lg  opacity-75"></i>
+                  <span className="ml-2 text-white text-xl font-bold ">
                     Services
                   </span>
                 </Link>
@@ -89,8 +89,8 @@ const Menu = () => {
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                   href="#pablo"
                 >
-                  <i className="fab fa-facebook-square text-lg leading-lg text-white opacity-75"></i>
-                  <span className="ml-2 text-black text-xl font-bold ">
+                  <i className="fab fa-facebook-square text-lg leading-lg opacity-75"></i>
+                  <span className="ml-2 text-white text-xl font-bold ">
                     Contact
                   </span>
                 </Link>
@@ -100,7 +100,7 @@ const Menu = () => {
                   <input type="checkbox" />
 
                   <svg
-                    className="swap-on fill-current w-7 h-7 ml-6 mt-0.5 text-black "
+                    className="swap-on fill-current w-7 h-7 ml-6 mt-0.8 text-white "
                     id=""
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -109,7 +109,7 @@ const Menu = () => {
                   </svg>
 
                   <svg
-                    className="swap-off fill-current w-7 h-7 ml-6 mt-0.5 text-black"
+                    className="swap-off fill-current w-7 h-7 ml-6 mt-0.8 text-white"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
                   >

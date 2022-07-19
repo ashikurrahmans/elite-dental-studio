@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div>
       <div className="bg-[#060606]">
-        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-52 lg:pb-52 md:pb-72">
+        <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-72 lg:pb-52 md:pb-72 sm:pb-28">
           <div className="max-w-xl sm:mx-auto lg:max-w-2xl">
             <div className="flex flex-col mb-16 sm:text-center sm:mb-0">
               <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
@@ -24,7 +24,7 @@ const HeroSection = () => {
               <div>
                 <Link
                   to="/services"
-                  className=" bg-white inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 rounded shadow-md hover:text-deep-purple-900 bg-teal-accent-400 hover:bg-deep-purple-accent-100 focus:shadow-outline focus:outline-none"
+                  className=" bg-white inline-flex items-center justify-center h-12 px-6 font-semibold tracking-wide text-teal-900 transition duration-200 rounded-lg shadow-md hover:text-deep-purple-900 bg-teal-accent-400 hover:bg-deep-purple-accent-100 focus:shadow-outline focus:outline-none"
                 >
                   Our Services
                 </Link>

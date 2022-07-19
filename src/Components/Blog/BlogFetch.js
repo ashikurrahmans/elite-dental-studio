@@ -9,13 +9,16 @@ const BlogFetch = () => {
       "https://raw.githubusercontent.com/ashikurrahmans/portfolio-json/main/blog.json"
     )
       .then((res) => res.json())
-      .then((data) => setBlogs(data));
+      .then((data) => {
+        setBlogs(data);
+        console.log(data);
+      });
   }, []);
 
   return (
     <>
       <div className="space-y-2 text-center">
-        <h2 className="text-3xl font-bold">Partem reprimique an pro</h2>
+        <h2 className="text-3xl font-bold">Our Recent Blogs</h2>
         <p className="font-serif text-sm dark:text-gray-400">
           Qualisque erroribus usu at, duo te agam soluta mucius.
         </p>
