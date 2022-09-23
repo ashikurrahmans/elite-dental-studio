@@ -1,0 +1,37 @@
+[
+  {
+    "aboutTitle": "About US",
+    "aboutDescription": "Gainesville, also renowned as the Queen City of the Mountains and the Poultry Capital, was recently named the Hospitality Capital of the World after it hosted the 1996 Olympic rowing and kayaking competitions. The 38,000-acre Lake Sidney Lanier provides several recreational activities, such as the rental of canoes and kayaks at the Olympic Venue. Every year, the Petit LeMans is held at Road Atlanta, a world-renowned street racing track.",
+    "founderImage": "",
+    "meta": "About CEO",
+    "name": "Edgar Munoz DTG",
+    "designation": "CEO Elite Dental Studio LLC in Atlanta",
+    "founderDescription": "Owner of the Elite Dental Studio USA in Georgia, Edgar Munoz, has been a renowned figure in the dental industry. Named one of the Forty Under Forty top dental technicians in the US by the LMT magazine in 2012, Mr. Munoz provides individualized services to dentist clientele who share his ideal of excellent esthetics. His competence in digital dentistry, implant restorations, and crown and bridge encompasses more than 18 years of experience. He has extended his education by participating in several workshops and courses across the US and abroad. Additionally, Mr. Munoz belongs to the Dental Technicians Guild.",
+    "promisiseTitle": "Our Promise",
+    "promiseDesciption": "Elite Dental Studio USA believes every client should access the best quality treatment. Thus, with us as your partner, it is always possible to provide patients with beautiful smiles and the most effective treatment. Indeed our advanced digital process and production efficiencies enable us to offer first-rate restorations created from the best quality materials at an affordable price.",
+    "promiseButtonUrl": "#",
+    "videoUrl": "#",
+    "advantageTitle": "Advantages Of Elite Dental Studio USA",
+    "AdvantagesDescription": "Elite Dental Studio features a full-service laboratory with the skills, knowledge, and dedication to aid in the success of your practice.",
+    "iconBox": [
+      {
+        "id": 1,
+        "iconTitle": "Best Customer Service",
+        "iconDescription": "Our top priority is customer service of the highest caliber, and we attempt to offer our clients a smooth experience.",
+        "iconUrl": "#"
+      },
+      {
+        "id": 2,
+        "iconTitle": "Best Customer Service",
+        "iconDescription": "Our top priority is customer service of the highest caliber, and we attempt to offer our clients a smooth experience.",
+        "iconUrl": "#"
+      },
+      {
+        "id": 3,
+        "iconTitle": "Best Customer Service",
+        "iconDescription": "Our top priority is customer service of the highest caliber, and we attempt to offer our clients a smooth experience.",
+        "iconUrl": "#"
+      }
+    ]
+  }
+]
