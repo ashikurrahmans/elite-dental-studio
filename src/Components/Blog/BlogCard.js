@@ -5,7 +5,7 @@ import BlogCategory from "./Categories/BlogCategory";
 const BlogCard = ({ blog }) => {
   return (
     <>
-      <article className="flex flex-col shadow my-4">
+      <article className="flex flex-col shadow ">
         <Link to="#" className="hover:opacity-75">
           <img src={blog.image} alt="" />
         </Link>
