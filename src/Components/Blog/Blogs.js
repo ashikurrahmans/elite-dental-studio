@@ -22,13 +22,15 @@ const Blogs = () => {
   return (
     <>
       <div className="container mx-auto flex flex-wrap py-6">
-        <section className="w-full md:w-2/3 flex flex-col items-center px-3">
+        <section className="w-full lg:w-9/12 md:w-9/12 sm:12/12 flex flex-col items-center px-3">
           {blogs?.map((blog, i) => {
             return <BlogCard blog={blog} key={i}></BlogCard>;
           })}
           <Pagination></Pagination>
         </section>
-        <Sidebar></Sidebar>
+        <div className="lg:block md:block sm:none">
+          <Sidebar></Sidebar>
+        </div>
       </div>
     </>
   );

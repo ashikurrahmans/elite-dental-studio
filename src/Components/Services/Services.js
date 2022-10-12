@@ -20,7 +20,6 @@ const Services = () => {
             farm-to-table.
           </p>
         </div>
-
         <ServiceItem></ServiceItem>
       </section>
     </div>
