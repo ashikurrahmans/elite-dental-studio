@@ -24,7 +24,7 @@ const WhyChooseUs = ({ iconSectionTitle, iconSectionDescription, icon }) => {
                 <div className="p-4 md:w-1/4 sm:w-1/2 w-full" key={i}>
                   <div className="border-2  px-4 py-6 bg-black text-white rounded-2xl">
                     {
-                      <SingleIcon.IconName className="text-[#6DB416] w-12 h-12 mb-3 inline-block shadow-lg" />
+                      // <SingleIcon.IconName className="text-[#6DB416] w-12 h-12 mb-3 inline-block shadow-lg" />
                     }
                     <h2 className="title-font font-medium text-3xl text-white">
                       {SingleIcon.title}

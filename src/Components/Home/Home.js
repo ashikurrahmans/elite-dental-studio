@@ -6,15 +6,19 @@ import HeroSection from "./HeroSection";
 import Faq from "./Faq";
 import HeroBottom from "./HeroBottom";
 import ServicesFatch from "../Services/ServicesFatch";
+import useFatchData from "./../../hooks/useFatchData";
 
 const Home = () => {
-  const [homeData, setHomeData] = useState([]);
+  const [homeData, setData] = useState([]);
+  // const { data } = useFatchData(
+  //   "https://ashikurrahmans.github.io/elite-data/homepage.json"
+  // );
 
   useEffect(() => {
     fetch("https://ashikurrahmans.github.io/elite-data/homepage.json")
       .then((res) => res.json())
       .then((data) => {
-        setHomeData(data[0]);
+        setData(data[0]);
       });
   });
 

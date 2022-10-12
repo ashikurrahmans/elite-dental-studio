@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 import logo from "../../../src/assets/images/elitedentalstudiousalogo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Switch from "react-switch";
-import Themes from "./../ThemeColor/Themes";
+// import Themes from "./../ThemeColor/Themes";
 
 const Menu = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
-  const [colorTheme, setTheme] = Themes();
+  // const [colorTheme, setTheme] = Themes();
 
   return (
     <div className="" style={{ margin: "0 auto", marginButton: "20px" }}>
@@ -23,7 +23,7 @@ const Menu = () => {
               onClick={() => setNavbarOpen(!navbarOpen)}
             >
               {/* <i className="fas fa-bars"></i> */}
-              <GiHamburgerMenu></GiHamburgerMenu>
+              <GiHamburgerMenu style={{ color: "white" }}></GiHamburgerMenu>
             </button>
           </div>
           <div
