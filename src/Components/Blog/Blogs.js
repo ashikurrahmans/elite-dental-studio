@@ -25,7 +25,7 @@ const Blogs = () => {
         </section>
         <div className="lg:block md:block sm:none lg:w-3/12 w-9/12 sm:12/12">
           <Sidebar></Sidebar>
-          <SidebarArticles></SidebarArticles>
+          <SidebarArticles blogs={blogs}></SidebarArticles>
         </div>
       </div>
     </>

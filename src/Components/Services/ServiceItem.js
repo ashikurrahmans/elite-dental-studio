@@ -18,12 +18,12 @@ const ServiceItem = () => {
       {services?.map((service) => {
         return (
           <Link to={`${service.id}`}>
-            <div className="py-4">
-              <div id="card py-10">
-                <div className="container w-100 lg:w-4/5 mx-auto flex flex-col">
+            <div className="py-4 ">
+              <div id="card py-10 ">
+                <div className="container w-100 lg:w-4/5 mx-auto flex flex-col hover:shadow-2xl">
                   <div
                     v-for="card in cards"
-                    className="flex flex-col md:flex-row overflow-hidden bg-white hover:shadow-2xl rounded-lg shadow-xl  mt-4 w-100 mx-2"
+                    className="flex flex-col md:flex-row overflow-hidden bg-white rounded-lg shadow-xl mt-4 w-100 mx-2"
                   >
                     <div className="h-full w-auto md:w-1/2">
                       <img

@@ -26,15 +26,6 @@ const BredCumbs = ({ home, page, url }) => {
           </Link>
         </li>
         <li className="flex items-center space-x-2">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 32 32"
-            aria-hidden="true"
-            fill="currentColor"
-            className="w-2 h-2 mt-1 transform rotate-90 fill-current dark:text-gray-600"
-          >
-            <path d="M32 30.031h-32l16-28.061z"></path>
-          </svg>
           <Link
             rel="noopener noreferrer"
             to="/"

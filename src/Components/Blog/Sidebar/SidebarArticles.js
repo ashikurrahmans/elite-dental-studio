@@ -1,12 +1,12 @@
 import React from "react";
 
-const SidebarArticles = () => {
+const SidebarArticles = ({ blogs }) => {
   return (
     <>
       <div className=" mb-8 flex flex-wrap">
         <div className="w-full px-4">
           <h2
-            className="wow fadeInUp relative pb-5 text-2xl font-semibold text-dark sm:text-[28px] my-4"
+            className="wow fadeInUp relative text-2xl font-semibold text-dark sm:text-[28px] my-4"
             data-wow-delay=".1s"
           >
             Popular Articles
@@ -14,7 +14,7 @@ const SidebarArticles = () => {
           <span className="inline-block h-[2px] w-20 bg-primary"></span>
         </div>
 
-        <div className="w-[200px] px-4 md:w-1/2 lg:w-[300px] shadow border">
+        <div className="w-[200px] px-4 md:w-1/2 lg:w-[300px] shadow border py-4">
           <div
             className="wow fadeInUp mb-5 flex w-full items-center border-b border-[#F2F3F8] pb-5"
             data-wow-delay=".1s"
