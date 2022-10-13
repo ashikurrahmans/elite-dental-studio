@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <>
-      <aside className="w-72 text-white" aria-label="Sidebar">
+      <aside className="w-92 text-white" aria-label="Sidebar">
         <div className="px-3 py-4 overflow-y-auto rounded bg-white border border-t dark:bg-gray-800 mt-6">
           <h1 className=" mb-8 text-gray-500">Categories</h1>
           <ul className="space-y-2 text-white">

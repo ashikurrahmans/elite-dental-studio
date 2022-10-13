@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import BlogCard from "./BlogCard";
 import Pagination from "./Pagination";
 import Sidebar from "./Sidebar/Sidebar";
-import SidebarArticles from "./Sidebar/SidebarArticles";
+import SidebarArticles from "./Sidebar/SidebarHomeArticles";
 
 const Blogs = () => {
   const [blogs, setBlog] = useState([]);
