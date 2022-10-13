@@ -2,15 +2,10 @@ import React, { useEffect, useState } from "react";
 import BlogCard from "./BlogCard";
 import Pagination from "./Pagination";
 import Sidebar from "./Sidebar/Sidebar";
-// import useFatchData from "./../../hooks/useFatchData";
+import SidebarArticles from "./Sidebar/SidebarArticles";
 
 const Blogs = () => {
   const [blogs, setBlog] = useState([]);
-  // const { data } = useFatchData(
-  //   "https://ashikurrahmans.github.io/elite-data/blogs.json"
-  // );
-
-  // console.log("blog", data);
 
   useEffect(() => {
     fetch("https://ashikurrahmans.github.io/elite-data/blogs.json")
@@ -28,8 +23,9 @@ const Blogs = () => {
           })}
           <Pagination></Pagination>
         </section>
-        <div className="lg:block md:block sm:none">
+        <div className="lg:block md:block sm:none lg:w-3/12 w-9/12 sm:12/12">
           <Sidebar></Sidebar>
+          <SidebarArticles></SidebarArticles>
         </div>
       </div>
     </>

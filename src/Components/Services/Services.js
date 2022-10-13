@@ -8,7 +8,7 @@ const Services = () => {
     <div>
       <PageTitle title="Our Services"></PageTitle>
       <BredCumbs home="Home" page="Services" url="/services"></BredCumbs>
-      <section className="w-11/12 mx-auto">
+      <section className="lg:w-12/12 mx-auto">
         <div className="flex flex-wrap w-full mb-20 flex-col items-center text-center mt-20">
           <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
             Business Services To Help Grow Your Dental Practice
