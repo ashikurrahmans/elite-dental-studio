@@ -25,7 +25,7 @@ const BlogCard = ({ blog }) => {
               <div className="text-sm text-neutral-600 md:none">
                 {/* {description.slice(0, 400)} */}
                 {title?.length >= 55
-                  ? description.slice(0, 300) + "..."
+                  ? description.slice(0, 250) + "..."
                   : description.slice(0, 400) + "..."}
               </div>
             </div>
