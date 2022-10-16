@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Sidebar from "./Sidebar/Sidebar";
 import SidebarSingleArticle from "./Sidebar/sidebarArticles/SidebarSingleArticle";
+import SInleBlogServices from "./SInleBlogServices";
 
 const SingleBlog = () => {
   const [blogs, setBlog] = useState([]);
@@ -14,7 +15,6 @@ const SingleBlog = () => {
         setBlog(data);
       });
   });
-  console.log(blogs);
   const blogSingle = blogs?.find((item) => item.id === Number(id));
   return (
     <>
@@ -238,105 +238,13 @@ const SingleBlog = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="-mx-4 flex flex-wrap">
-          <div className="wow fadeInUp mt-14 w-full px-4" data-wow-delay=".2s">
-            <h2 className="relative pb-5 text-2xl font-semibold text-dark sm:text-[28px]">
-              Our Services
-            </h2>
-            <span className="mb-10 inline-block h-[2px] w-20 bg-primary"></span>
-          </div>
-          <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div className="wow fadeInUp group mb-10" data-wow-delay=".1s">
-              <div className="mb-8 overflow-hidden rounded">
-                <a href="blog-details.html" className="block">
-                  <img
-                    src="https://res.cloudinary.com/dcqcto7jt/image/upload/v1665588187/elitedental/Veeners_gwj0dg.png"
-                    alt="images"
-                    className="w-full transition group-hover:rotate-6 group-hover:scale-125"
-                  />
-                </a>
-              </div>
-              <div>
-                <span className="mb-5 inline-block rounded bg-primary py-1 text-center text-xs font-semibold leading-loose text-black">
-                  Dec 22, 2023
-                </span>
-
-                <h3>
-                  <a
-                    href="blog-details.html"
-                    className="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
-                  >
-                    Meet AutoManage, the best AI management tools
-                  </a>
-                </h3>
-                <p className="text-base text-body-color">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div className="wow fadeInUp group mb-10" data-wow-delay=".15s">
-              <div className="mb-8 overflow-hidden rounded">
-                <a href="blog-details.html" className="block">
-                  <img
-                    src="https://res.cloudinary.com/dcqcto7jt/image/upload/v1665588178/elitedental/implent-restoration_hswqmh.jpg"
-                    alt="images"
-                    className="w-full transition group-hover:rotate-6 group-hover:scale-125"
-                  />
-                </a>
-              </div>
-              <div>
-                <span className="mb-5 inline-block rounded bg-primary py-1 text-center text-xs font-semibold leading-loose text-black">
-                  Mar 15, 2023
-                </span>
-                <h3>
-                  <a
-                    href="blog-details.html"
-                    className="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
-                  >
-                    How to earn more money as a wellness coach
-                  </a>
-                </h3>
-                <p className="text-base text-body-color">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-            <div className="wow fadeInUp group mb-10" data-wow-delay=".15s">
-              <div className="mb-8 overflow-hidden rounded">
-                <a href="blog-details.html" className="block">
-                  <img
-                    src="https://res.cloudinary.com/dcqcto7jt/image/upload/v1665588178/elitedental/implent-restoration_hswqmh.jpg"
-                    alt="images"
-                    className="w-full transition group-hover:rotate-6 group-hover:scale-125"
-                  />
-                </a>
-              </div>
-              <div>
-                <span className="mb-5 inline-block rounded bg-primary py-1 text-center text-xs font-semibold leading-loose text-black">
-                  Mar 15, 2023
-                </span>
-                <h3>
-                  <a
-                    href="blog-details.html"
-                    className="mb-4 inline-block text-xl font-semibold text-dark hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl"
-                  >
-                    How to earn more money as a wellness coach
-                  </a>
-                </h3>
-                <p className="text-base text-body-color">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
-                </p>
+              <h1 className="text-2xl text-black font-bold my-4">
+                Our Services
+              </h1>
+              <div className="lg:grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4">
+                <SInleBlogServices></SInleBlogServices>
+                <SInleBlogServices></SInleBlogServices>
+                <SInleBlogServices></SInleBlogServices>
               </div>
             </div>
           </div>
