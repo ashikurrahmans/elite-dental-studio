@@ -6,7 +6,6 @@ import HeroSection from "./HeroSection";
 import Faq from "./Faq";
 import HeroBottom from "./HeroBottom";
 import ServicesFatch from "../Services/ServicesFatch";
-import useFatchData from "./../../hooks/useFatchData";
 
 const Home = () => {
   const [homeData, setData] = useState([]);
