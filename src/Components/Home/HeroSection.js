@@ -58,7 +58,7 @@ const HeroSection = ({ homeTitle, homeDescription }) => {
       <header>
         <video class="video-bg" autoPlay={true} muted loop>
           <source
-            src="https://player.vimeo.com/video/506116236"
+            src="http://www.georgewpark.com/video/blurred-street.mp4"
             type="video/mp4"
           />
           <source
