@@ -35,7 +35,7 @@ const Contact = () => {
   const [contactData, setContact] = useState([]);
 
   useEffect(() => {
-    fetch("https://ashikurrahmans.github.io/elite-data/contactpage.json")
+    fetch("https://elitedentals.github.io/elite-data/contactpage.json")
       .then((res) => res.json())
       .then((data) => {
         setContact(data[0]);

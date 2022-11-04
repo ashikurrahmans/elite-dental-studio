@@ -12,9 +12,7 @@ const ServiceSingle = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch(
-      "https://raw.githubusercontent.com/ashikurrohman/boots-data/main/elite-services.json"
-    )
+    fetch("https://elitedentals.github.io/elite-data/servicepage.json")
       .then((res) => res.json())
       .then((data) => setServices(data));
   });

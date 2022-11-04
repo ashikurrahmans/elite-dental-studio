@@ -5,18 +5,16 @@ const ServiceItem = () => {
   const [services, setServices] = useState([]);
 
   useEffect(() => {
-    fetch(
-      "https://raw.githubusercontent.com/ashikurrohman/boots-data/main/elite-services.json"
-    )
+    fetch("https://elitedentals.github.io/elite-data/servicepage.json")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
 
   return (
     <>
-      {services?.map((service) => {
+      {services?.map((service, i) => {
         return (
-          <Link to={`${service.id}`}>
+          <Link to={`${service.id}`} key={i}>
             <div className="py-4 ">
               <div id="card py-10 ">
                 <div className="container w-100 lg:w-4/5 mx-auto flex flex-col hover:shadow-2xl">

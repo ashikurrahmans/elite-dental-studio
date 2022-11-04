@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const SidebarArticles = () => {
   const [blogs, setBlog] = useState([]);
   useEffect(() => {
-    fetch("https://ashikurrahmans.github.io/elite-data/blogs.json")
+    fetch("https://elitedentals.github.io/elite-data/blogs.json")
       .then((res) => res.json())
       .then((data) => {
         setBlog(data);
@@ -26,8 +26,11 @@ const SidebarArticles = () => {
           <span className="inline-block h-[2px] w-20 bg-primary"></span>
         </div>
 
-        {blogs?.slice(2, 7).map((blog) => (
-          <div className="w-[200px] px-4 md:w-1/2 lg:w-[300px] shadow border py-4">
+        {blogs?.slice(2, 7).map((blog, i) => (
+          <div
+            className="w-[200px] px-4 md:w-1/2 lg:w-[300px] shadow border py-4"
+            key={i}
+          >
             <div
               className="wow fadeInUp mb-2 flex w-full items-center border-b border-[#F2F3F8]"
               data-wow-delay=".1s"

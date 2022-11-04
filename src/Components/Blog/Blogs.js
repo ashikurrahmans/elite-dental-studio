@@ -8,7 +8,7 @@ const Blogs = () => {
   const [blogs, setBlog] = useState([]);
 
   useEffect(() => {
-    fetch("https://ashikurrahmans.github.io/elite-data/blogs.json")
+    fetch("https://elitedentals.github.io/elite-data/blogs.json")
       .then((res) => res.json())
       .then((data) => {
         setBlog(data);

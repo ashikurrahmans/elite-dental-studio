@@ -11,7 +11,7 @@ const About = () => {
   const [aboutData, setAboutData] = useState([]);
 
   useEffect(() => {
-    fetch("https://ashikurrahmans.github.io/elite-data/aboutpage.json")
+    fetch("https://elitedentals.github.io/elite-data/aboutpage.json")
       .then((res) => res.json())
       .then((data) => {
         setAboutData(data[0]);

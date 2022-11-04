@@ -5,8 +5,7 @@ import HomeServiceCard from "./HomeServiceCard";
 const ServicesFatch = ({ serviceTitle, serviceDescription }) => {
   const [services, setServices] = useState([]);
 
-  const queryUrl =
-    "https://ashikurrahmans.github.io/elite-data/servicepage.json";
+  const queryUrl = "https://elitedentals.github.io/elite-data/servicepage.json";
   useEffect(() => {
     fetch(queryUrl)
       .then((res) => res.json())

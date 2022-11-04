@@ -9,12 +9,9 @@ import ServicesFatch from "../Services/ServicesFatch";
 
 const Home = () => {
   const [homeData, setData] = useState([]);
-  // const { data } = useFatchData(
-  //   "https://ashikurrahmans.github.io/elite-data/homepage.json"
-  // );
 
   useEffect(() => {
-    fetch("https://ashikurrahmans.github.io/elite-data/homepage.json")
+    fetch("https://elitedentals.github.io/elite-data/homepage.json")
       .then((res) => res.json())
       .then((data) => {
         setData(data[0]);
