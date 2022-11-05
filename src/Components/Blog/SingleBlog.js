@@ -15,6 +15,7 @@ const SingleBlog = () => {
         setBlog(data);
       });
   });
+
   const blogSingle = blogs?.find((item) => item.id === Number(id));
   return (
     <>

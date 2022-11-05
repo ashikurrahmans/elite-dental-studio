@@ -3,15 +3,24 @@ import { Link } from "react-router-dom";
 import BlogCategory from "./Categories/BlogCategory";
 
 const BlogCard = ({ blog }) => {
-  const { id, image, title, description } = blog;
+  // const { id, image, title, description } = blog;
+  const {
+    id,
+    Titles,
+    blogContent,
+    Author,
+    PublishedDate,
+    updatedAt,
+    featuredImage,
+  } = blog;
   return (
     <article className="lg:w-[900px] lg:h-[300px] md:w-[600px] md:h-[250px] sm:w-[400px] sm:h-[180px] bg-white shadow-lg my-6 border-t border">
       <div className="grid lg:grid-cols-3 md:grid-cols-2">
         <div>
           <Link to={`/blogs/${id}`}>
             <img
-              src={image}
-              alt={title}
+              src={`http://localhost:1337/${featuredImage.formats.medium.url}`}
+              alt={Titles}
               className="hover:opacity-80 border lg:h-[300px] md:h-[250px] sm:h-[180px]"
             />
           </Link>
@@ -20,13 +29,13 @@ const BlogCard = ({ blog }) => {
           <div className="py-8 mb-12 mx-4">
             <div className="mt-2 mb-4">
               <Link to={`/blogs/${id}`}>
-                <h1 className="mb-3 text-xl font-bold">{title}</h1>
+                <h1 className="mb-3 text-xl font-bold">{Titles}</h1>
               </Link>
               <div className="text-sm text-neutral-600 md:none">
                 {/* {description.slice(0, 400)} */}
-                {title?.length >= 55
-                  ? description.slice(0, 250) + "..."
-                  : description.slice(0, 400) + "..."}
+                {Titles?.length >= 55
+                  ? blogContent.slice(0, 250) + "..."
+                  : blogContent.slice(0, 400) + "..."}
               </div>
             </div>
 
@@ -79,7 +88,7 @@ const BlogCard = ({ blog }) => {
                 </div>
               </div>
             </div>
-            <BlogCategory description={description}></BlogCategory>
+            <BlogCategory description={blogContent}></BlogCategory>
           </div>
         </div>
       </div>
