@@ -1,26 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BlogCategory from "./Categories/BlogCategory";
+import BlogCategory from "./Tags/BlogTags";
 
 const BlogCard = ({ blog }) => {
-  // const { id, image, title, description } = blog;
-  const {
-    id,
-    Titles,
-    blogContent,
-    Author,
-    PublishedDate,
-    updatedAt,
-    featuredImage,
-  } = blog;
+  const { title, mainContent, featureImage } = blog.attributes;
+  const baseUrl = "http://localhost:1337";
+  const imageUrl = featureImage.data.attributes.url;
+  const postImage = baseUrl + imageUrl;
+
+  const blogUrl = title
+    .toLowerCase()
+    .replace(/ /g, "-")
+    .replace(/[^\w-]+/g, "");
+
   return (
     <article className="lg:w-[900px] lg:h-[300px] md:w-[600px] md:h-[250px] sm:w-[400px] sm:h-[180px] bg-white shadow-lg my-6 border-t border">
       <div className="grid lg:grid-cols-3 md:grid-cols-2">
         <div>
-          <Link to={`/blogs/${id}`}>
+          <Link to={`/blogs/${blogUrl}`}>
             <img
-              src={`http://localhost:1337/${featuredImage.formats.medium.url}`}
-              alt={Titles}
+              src={postImage}
+              alt={title}
               className="hover:opacity-80 border lg:h-[300px] md:h-[250px] sm:h-[180px]"
             />
           </Link>
@@ -28,21 +28,21 @@ const BlogCard = ({ blog }) => {
         <div className="lg:col-span-2 md:col-span-1">
           <div className="py-8 mb-12 mx-4">
             <div className="mt-2 mb-4">
-              <Link to={`/blogs/${id}`}>
-                <h1 className="mb-3 text-xl font-bold">{Titles}</h1>
+              <Link to={`/blogs/${blogUrl}`}>
+                <h1 className="mb-3 text-xl font-bold">{title}</h1>
               </Link>
               <div className="text-sm text-neutral-600 md:none">
                 {/* {description.slice(0, 400)} */}
-                {Titles?.length >= 55
-                  ? blogContent.slice(0, 250) + "..."
-                  : blogContent.slice(0, 400) + "..."}
+                {title?.length >= 55
+                  ? mainContent.slice(0, 250) + "..."
+                  : mainContent.slice(0, 400) + "..."}
               </div>
             </div>
 
             <div className="flex items-center justify-between text-slate-500 mb-6">
               <div>
                 <span>
-                  <Link to={`/blogs/${id}`} className="text-red-800">
+                  <Link to={`/blogs/${blog.id}`} className="text-red-800">
                     Read More..
                   </Link>
                 </span>
@@ -50,7 +50,7 @@ const BlogCard = ({ blog }) => {
               <div>
                 <div className="flex space-x-4 md:space-x-8">
                   <div className="flex cursor-pointer items-center transition hover:text-slate-600">
-                    <Link to={`/blogs/${id}`}>
+                    <Link to={`/blogs/${blog.id}`}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="mr-1.5 h-5 w-5"
@@ -88,7 +88,7 @@ const BlogCard = ({ blog }) => {
                 </div>
               </div>
             </div>
-            <BlogCategory description={blogContent}></BlogCategory>
+            <BlogCategory></BlogCategory>
           </div>
         </div>
       </div>

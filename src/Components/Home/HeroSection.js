@@ -6,11 +6,11 @@ const HeroSection = ({ homeTitle, homeDescription }) => {
   return (
     <>
       <header>
-        <video class="video-bg" autoPlay={true} muted loop>
+        <video className="video-bg" autoPlay={true} muted loop>
           <source src={videobg} type="video/mp4" />
         </video>
 
-        <div class="video-overlay">
+        <div className="video-overlay">
           <h1 className="text-white text-7xl tracking-normal mb-2 font-medium">
             GRAB <span className="bg-[#0ef059] font-bold px-2">ATTENTION</span>
           </h1>
