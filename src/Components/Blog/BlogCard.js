@@ -8,16 +8,18 @@ const BlogCard = ({ blog }) => {
   const imageUrl = featureImage.data.attributes.url;
   const postImage = baseUrl + imageUrl;
 
-  const blogUrl = title
-    .toLowerCase()
-    .replace(/ /g, "-")
-    .replace(/[^\w-]+/g, "");
+  // const randomNum = Math.floor(Math.random() * 48299);
+  // const titleWithRandom = title + "-" + randomNum;
+  // const blogUrl = titleWithRandom
+  //   .toLowerCase()
+  //   .replace(/ /g, "-")
+  //   .replace(/[^\w-]+/g, "");
 
   return (
     <article className="lg:w-[900px] lg:h-[300px] md:w-[600px] md:h-[250px] sm:w-[400px] sm:h-[180px] bg-white shadow-lg my-6 border-t border">
       <div className="grid lg:grid-cols-3 md:grid-cols-2">
         <div>
-          <Link to={`/blogs/${blogUrl}`}>
+          <Link to={`/blogs/${blog.id}`}>
             <img
               src={postImage}
               alt={title}
@@ -28,7 +30,7 @@ const BlogCard = ({ blog }) => {
         <div className="lg:col-span-2 md:col-span-1">
           <div className="py-8 mb-12 mx-4">
             <div className="mt-2 mb-4">
-              <Link to={`/blogs/${blogUrl}`}>
+              <Link to={`/blogs/${blog.id}`}>
                 <h1 className="mb-3 text-xl font-bold">{title}</h1>
               </Link>
               <div className="text-sm text-neutral-600 md:none">

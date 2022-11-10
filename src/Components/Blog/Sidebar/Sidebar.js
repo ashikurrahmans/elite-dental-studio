@@ -15,7 +15,7 @@ const Sidebar = () => {
       });
   });
   const categoryNames = categories?.data?.attributes?.categoryName;
-  console.log(categoryNames);
+
   return (
     <>
       <aside
@@ -23,7 +23,9 @@ const Sidebar = () => {
         aria-label="Sidebar"
       >
         <div className="px-3 py-4 overflow-y-auto rounded bg-white border border-t dark:bg-gray-800 mt-6">
-          <h1 className=" mb-8 text-gray-500">Categories</h1>
+          <h1 className="text-black mb-8 text-gray-800cd font-bold text-2xl">
+            Top Categories
+          </h1>
           <ul className="space-y-2 text-white">
             <li>
               <Link
@@ -34,7 +36,7 @@ const Sidebar = () => {
                   <span className="ml-3 text-black hover:text-black">
                     Dashboard
                   </span>
-                  <span className=""></span>
+                  <span></span>
                   <span className="ml-3 text-black hover:text-black">
                     {categories.length}
                   </span>

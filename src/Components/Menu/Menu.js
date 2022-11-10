@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../src/assets/images/elitedentalstudiousalogo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
-import Switch from "react-switch";
+// import Switch from "react-switch";
 // import Themes from "./../ThemeColor/Themes";
 
 const Menu = () => {
@@ -89,9 +89,7 @@ const Menu = () => {
                   </span>
                 </Link>
               </li>
-              <li className="nav-item mt-2 ml-4">
-                <Switch />
-              </li>
+              <li className="nav-item mt-2 ml-4">{/* <Switch /> */}</li>
             </ul>
           </div>
         </div>
