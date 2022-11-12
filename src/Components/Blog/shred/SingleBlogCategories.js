@@ -18,7 +18,7 @@ const SingleBlogCategories = () => {
   const blogAttr = blog?.attributes;
 
   const categories = blogAttr?.categories.data.map((item) => (
-    <li className="bg-gray-200 hover:bg-gray-300 text-xl list-none rounded-full py-1 px-2">
+    <li className="bg-gray-200 hover:bg-gray-300 text-gray-500 text-sm list-none rounded-full py-1 px-2">
       <Link to={""}>{item.attributes.categoryName}</Link>
     </li>
   ));

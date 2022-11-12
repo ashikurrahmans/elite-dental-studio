@@ -1,11 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import Sidebar from "../Sidebars/Sidebar";
 import ShareIcons from "./shred/ShareIcons";
 import SingleBlogCategories from "./shred/SingleBlogCategories";
 import SidebarCategories from "./../Sidebars/SidebarCategories";
 import PopularArticles from "../Sidebars/PopularArticles";
+import Loader from "../Shared/Loader";
 
 const SingleBlog = () => {
   const [loading, setLoading] = useState(false);
@@ -29,7 +29,7 @@ const SingleBlog = () => {
   return (
     <>
       {loading ? (
-        ""
+        <Loader />
       ) : (
         <article className="pb-10 lg:pt-10 lg:pb-20 lg:w-11/12 mx-auto">
           <div
