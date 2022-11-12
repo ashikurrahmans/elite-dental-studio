@@ -1,7 +1,23 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Link, useLocation } from "react-router-dom";
+import { allContext } from "./../../ContextApi/ContentProvider";
 
 const PopularArticles = () => {
+  // Blog Context
+  const { blogs } = useContext(allContext);
+
+  const location = useLocation();
+  // const randomNum1 = Math.floor(Math.random() * 5) + 1;
+  // const randomNum2 = Math.floor(Math.random() * 5) + 1;
+  // const randomNum3 = Math.floor(Math.random() * 5) + 1;
+  // const ranArr = [randomNum1, randomNum2, randomNum3];
+
+  if (location === "/blog") {
+  } else {
+    // const dataFilters =
+  }
+
   return (
     <>
       <div className="mb-6 bg-white shadow-md p-2 mt-7 lg:w-72 md:w-60 sm:w-48">

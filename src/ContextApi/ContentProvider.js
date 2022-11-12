@@ -9,19 +9,27 @@ export const allContext = createContext();
 // Component
 const ContentProvider = ({ children }) => {
   const [loading, setLoading] = useState(false);
-
-  // Blogs Category Fetch
   const [blogs, setBlogs] = useState([]);
-
-  // categories Fetch data
   const [categories, setCategories] = useState([]);
+  const [blogSingle, setSingleBlog] = useState([]);
 
+  // Fetching for Blog
   const fetchBlog = async () => {
     const response = await axios.get(
       `http://localhost:1337/api/blogs?populate=*`
     );
-    setBlogs(response.data.data);
+    setBlogs(response?.data?.data);
   };
+  // Fetching for Blog
+  const fetchBlogSingle = async (id) => {
+    const response = await axios.get(
+      `http://localhost:1337/api/blogs/${id}?populate=*`
+    );
+    setSingleBlog(response?.data?.data);
+  };
+
+  // Fetching for categories
+
   const fetchCategories = async () => {
     const response = await axios.get(
       `http://localhost:1337/api/categories?populate=*`
@@ -32,9 +40,10 @@ const ContentProvider = ({ children }) => {
   useEffect(() => {
     fetchBlog();
     fetchCategories();
-  }, [blogs, categories]);
+    fetchBlogSingle();
+  }, []);
 
-  const value = { blogs, categories, loading };
+  const value = { blogs, categories, loading, fetchBlogSingle, blogSingle };
 
   return <allContext.Provider value={value}>{children}</allContext.Provider>;
 };

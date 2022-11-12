@@ -13,16 +13,19 @@ const SidebarCategories = () => {
         </h5>
         {categories?.length ? (
           <ul>
-            {categories.map((item) => (
-              <li className="px-1 py-4 border-b border-t border-white hover:border-gray-200 transition duration-300">
+            {categories.slice(0, 6).map((category) => (
+              <li
+                key={category?.id}
+                className="px-1 py-4 border-b border-t border-white hover:border-gray-200 transition duration-300"
+              >
                 <Link
-                  to="#"
+                  to={`/categories/${category?.attributes?.categorySlug}`}
                   className="flex items-center text-gray-600 cursor-pointer"
                 >
                   <span className="inline-block h-4 w-4 bg-green-300 mr-3"></span>
-                  {item?.attributes?.categoryName}
+                  {category?.attributes?.categoryName}
                   <span className="text-gray-500 ml-auto">
-                    {item?.attributes?.blogs?.data.length} articles
+                    {category?.attributes?.blogs?.data.length} articles
                   </span>
                   <i className="text-gray-500 bx bx-right-arrow-alt ml-1"></i>
                 </Link>

@@ -1,23 +1,18 @@
-import { useState } from "react";
+import { useContext } from "react";
+import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
+import { allContext } from "./../../../ContextApi/ContentProvider";
 
 const SingleBlogCategories = () => {
-  const [blog, setBlog] = useState([]);
-  const [loading, setLoading] = useState(false);
   const { id } = useParams();
+  const { blogSingle, fetchBlogSingle } = useContext(allContext);
+  useEffect(() => {
+    fetchBlogSingle(id);
+  });
+  console.log(blogSingle);
+  const blogAttr = blogSingle?.attributes;
 
-  const baseUrl = `http://localhost:1337`;
-
-  fetch(`${baseUrl}/api/blogs/${id}?populate=*`)
-    .then((res) => res.json())
-    .then((data) => {
-      setLoading(true);
-      setBlog(data.data);
-      setLoading(false);
-    });
-  const blogAttr = blog?.attributes;
-
-  const categories = blogAttr?.categories.data.map((item) => (
+  const categories = blogAttr?.categories?.data.map((item) => (
     <li className="bg-gray-200 hover:bg-gray-300 text-gray-500 text-sm list-none rounded-full py-1 px-2">
       <Link to={""}>{item.attributes.categoryName}</Link>
     </li>

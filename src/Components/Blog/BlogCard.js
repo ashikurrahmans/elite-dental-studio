@@ -8,18 +8,11 @@ const BlogCard = ({ blog }) => {
   const imageUrl = featureImage.data.attributes.url;
   const postImage = baseUrl + imageUrl;
 
-  // const randomNum = Math.floor(Math.random() * 48299);
-  // const titleWithRandom = title + "-" + randomNum;
-  // const blogUrl = titleWithRandom
-  //   .toLowerCase()
-  //   .replace(/ /g, "-")
-  //   .replace(/[^\w-]+/g, "");
-
   return (
     <article className="lg:w-[900px] lg:h-[300px] md:w-[600px] md:h-[250px] sm:w-[400px] sm:h-[180px] bg-white shadow-lg my-6 border-t border">
       <div className="grid lg:grid-cols-3 md:grid-cols-2">
         <div>
-          <Link to={`/blogs/${blog.id}`}>
+          <Link to={`/blogs/${blog.postSlug}`}>
             <img
               src={postImage}
               alt={title}

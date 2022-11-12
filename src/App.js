@@ -20,6 +20,10 @@ function App() {
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/blogs/:id" element={<SingleBlog></SingleBlog>}></Route>
         <Route
+          path="/categories/:categoryslug"
+          element={<SingleBlog></SingleBlog>}
+        ></Route>
+        <Route
           path="/services/:id"
           element={<ServiceSingle></ServiceSingle>}
         ></Route>

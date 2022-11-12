@@ -1,30 +1,30 @@
 import React from "react";
-import { useState } from "react";
 import { useParams } from "react-router-dom";
 import ShareIcons from "./shred/ShareIcons";
 import SingleBlogCategories from "./shred/SingleBlogCategories";
 import SidebarCategories from "./../Sidebars/SidebarCategories";
 import PopularArticles from "../Sidebars/PopularArticles";
 import Loader from "../Shared/Loader";
+import { useContext, useEffect } from "react";
+import { allContext } from "./../../ContextApi/ContentProvider";
 
 const SingleBlog = () => {
-  const [loading, setLoading] = useState(false);
-  const [blog, setBlog] = useState([]);
   const { id } = useParams();
+  const { fetchBlogSingle, blogSingle, loading } = useContext(allContext);
+  useEffect(() => {
+    fetchBlogSingle(id);
+  });
 
-  const baseUrl = `http://localhost:1337`;
-
-  fetch(`${baseUrl}/api/blogs/${id}?populate=*`)
-    .then((res) => res.json())
-    .then((data) => {
-      setLoading(true);
-      setBlog(data.data);
-      setLoading(false);
-    });
-
-  const singleBlogs = blog.attributes;
+  const singleBlogs = blogSingle?.attributes;
   const imageUrl = singleBlogs?.featureImage.data.attributes.url;
-  const image = baseUrl + imageUrl;
+  const image = `http://localhost:1337` + imageUrl;
+
+  // const randomNum = Math.floor(Math.random() * 48299);
+  // const titleWithRandom = title + "-" + randomNum;
+  // const blogUrl = titleWithRandom
+  //   .toLowerCase()
+  //   .replace(/ /g, "-")
+  //   .replace(/[^\w-]+/g, "");
 
   return (
     <>
