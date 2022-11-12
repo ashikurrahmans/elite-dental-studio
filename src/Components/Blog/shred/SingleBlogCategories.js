@@ -5,11 +5,10 @@ import { allContext } from "./../../../ContextApi/ContentProvider";
 
 const SingleBlogCategories = () => {
   const { id } = useParams();
-  const { blogSingle, fetchBlogSingle } = useContext(allContext);
+  const { loading, blogSingle, fetchBlogSingle } = useContext(allContext);
   useEffect(() => {
     fetchBlogSingle(id);
   });
-  console.log(blogSingle);
   const blogAttr = blogSingle?.attributes;
 
   const categories = blogAttr?.categories?.data.map((item) => (
