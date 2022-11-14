@@ -80,6 +80,17 @@ const Menu = () => {
               </li>
               <li className="nav-item">
                 <Link
+                  to="/fileupload"
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
+                >
+                  <i className="fab fa-facebook-square text-lg leading-lg  opacity-75"></i>
+                  <span className="ml-2 text-white text-xl font-bold ">
+                    File Upload
+                  </span>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link
                   to="/contact"
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                 >

@@ -9,6 +9,7 @@ import Footer from "./Components/Footer/Footer";
 import ServiceSingle from "./Components/Services/ServiceSingle";
 import Blogs from "./Components/Blog/Blogs";
 import SingleBlog from "./Components/Blog/SingleBlog";
+import FileUpload from "./Components/FileUpload/FileUpload";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           element={<ServiceSingle></ServiceSingle>}
         ></Route>
         <Route path="/services" element={<Services></Services>}></Route>
+        <Route path="/fileupload" element={<FileUpload></FileUpload>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>

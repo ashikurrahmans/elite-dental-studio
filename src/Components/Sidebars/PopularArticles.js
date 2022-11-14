@@ -5,9 +5,9 @@ import { allContext } from "./../../ContextApi/ContentProvider";
 
 const PopularArticles = () => {
   // Blog Context
-  const { blogs } = useContext(allContext);
   const { id } = useParams();
   const location = useLocation();
+  const { blogs } = useContext(allContext);
   const allBlog =
     location.pathname === "/blogs"
       ? blogs?.map((blog) => blog)
@@ -22,26 +22,28 @@ const PopularArticles = () => {
           {allBlog.length > 0 &&
             allBlog?.slice(0, 3).map((blog) => (
               <li
-                key={""}
+                key={blog?.id}
                 className="px-1 py-4 border-b border-t border-white hover:border-gray-200 transition duration-300"
               >
-                <Link
-                  rel="noopener noreferrer"
-                  to="#"
-                  className="font-serif hover:underline"
-                >
-                  {blog && blog?.attributes?.title}
-                </Link>
-                <p className="text-xs dark:text-gray-400">
-                  47 minutes ago by
+                <span>
                   <Link
                     rel="noopener noreferrer"
                     to="#"
-                    className="hover:underline dark:text-violet-400 ml-1"
+                    className="font-serif hover:underline"
                   >
-                    {blog && blog?.attributes?.authorName}
+                    {blog && blog?.attributes?.title}
                   </Link>
-                </p>
+                  <p className="text-xs dark:text-gray-400">
+                    47 minutes ago by
+                    <Link
+                      rel="noopener noreferrer"
+                      to="#"
+                      className="hover:underline dark:text-violet-400 ml-1"
+                    >
+                      {blog && blog?.attributes?.authorName}
+                    </Link>
+                  </p>
+                </span>
               </li>
             ))}
         </ul>

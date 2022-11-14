@@ -24,7 +24,7 @@ const SingleBlogCategories = () => {
           className="wow fadeInUp mb-8 flex flex-wrap items-center md:mb-0 gap-2"
           data-wow-delay=".1s"
         >
-          {categories}
+          Categories : {categories}
         </div>
       </div>
     </>
