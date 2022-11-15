@@ -1,6 +1,4 @@
 import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import BredCumbs from "../Shared/BredCumbs";
 import PageTitle from "./../PageTitle/PageTitle";
@@ -20,9 +18,9 @@ const About = () => {
     name,
     description,
     founderDescription,
-    promisiseTitle,
-    promiseDesciption,
-    videoUrl,
+    // promisiseTitle,
+    // promiseDesciption,
+    // videoUrl,
     advantageTitle,
     AdvantagesDescription,
     iconBox,
@@ -60,7 +58,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="text-gray-600 body-font my-20">
+      {/* <section className="text-gray-600 body-font my-20">
         <div className="container mx-auto flex px-5  md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">
@@ -91,7 +89,7 @@ const About = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="text-gray-600 body-font">
         <div className="container px-5 pb-24 mx-auto">
           <div className="text-center mb-20">

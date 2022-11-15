@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import PageTitle from "../PageTitle/PageTitle";
 import WhyChooseUs from "./WhyChooseUs";
 import ImageGallery from "./ImageGallery";

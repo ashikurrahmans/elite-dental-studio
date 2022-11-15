@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { pageContent } from "./../../ContextApi/PagesContext";
