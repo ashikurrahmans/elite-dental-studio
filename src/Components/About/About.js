@@ -6,17 +6,12 @@ import BredCumbs from "../Shared/BredCumbs";
 import PageTitle from "./../PageTitle/PageTitle";
 import { FaCloudRain } from "react-icons/fa";
 import { BsArrowRightShort } from "react-icons/bs";
+import { useContext } from "react";
+import { pageContent } from "./../../ContextApi/PagesContext";
 
 const About = () => {
-  const [aboutData, setAboutData] = useState([]);
+  const { aboutContent } = useContext(pageContent);
 
-  useEffect(() => {
-    fetch("https://elitedentals.github.io/elite-data/aboutpage.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setAboutData(data[0]);
-      });
-  });
   const {
     aboutTitle,
     aboutDescription,
@@ -31,7 +26,7 @@ const About = () => {
     advantageTitle,
     AdvantagesDescription,
     iconBox,
-  } = aboutData;
+  } = aboutContent;
   return (
     <div>
       <PageTitle title="About"></PageTitle>

@@ -1,18 +1,14 @@
 import React, { useEffect, useState } from "react";
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { pageContent } from "./../../ContextApi/PagesContext";
 
 const ServiceItem = () => {
-  const [services, setServices] = useState([]);
-
-  useEffect(() => {
-    fetch("https://elitedentals.github.io/elite-data/servicepage.json")
-      .then((res) => res.json())
-      .then((data) => setServices(data));
-  }, []);
+  const { servicesContent } = useContext(pageContent);
 
   return (
     <>
-      {services?.map((service, i) => {
+      {servicesContent?.map((service, i) => {
         return (
           <Link to={`${service.id}`} key={i}>
             <div className="py-4 ">

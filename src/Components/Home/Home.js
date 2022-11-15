@@ -6,17 +6,11 @@ import HeroSection from "./HeroSection";
 import Faq from "./Faq";
 import HeroBottom from "./HeroBottom";
 import ServicesFatch from "../Services/ServicesFatch";
+import { useContext } from "react";
+import { pageContent } from "./../../ContextApi/PagesContext";
 
 const Home = () => {
-  const [homeData, setData] = useState([]);
-
-  useEffect(() => {
-    fetch("https://elitedentals.github.io/elite-data/homepage.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setData(data[0]);
-      });
-  });
+  const { homeContent } = useContext(pageContent);
 
   const {
     homeTitle,
@@ -35,7 +29,7 @@ const Home = () => {
     galleryTitle,
     galleryDescription,
     imageBox,
-  } = homeData;
+  } = homeContent;
 
   return (
     <>
