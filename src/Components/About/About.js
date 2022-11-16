@@ -25,6 +25,7 @@ const About = () => {
     AdvantagesDescription,
     iconBox,
   } = aboutContent;
+
   return (
     <div>
       <PageTitle title="About"></PageTitle>

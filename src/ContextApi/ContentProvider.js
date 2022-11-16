@@ -2,6 +2,7 @@ import { useState } from "react";
 import { createContext } from "react";
 import { useEffect } from "react";
 import axios from "axios";
+var qs = require("qs");
 
 // Creating Content
 export const allContext = createContext();
@@ -35,6 +36,28 @@ const ContentProvider = ({ children }) => {
       `http://localhost:1337/api/categories?populate=*`
     );
     setCategories(response?.data?.data);
+  };
+
+  // Fetching blogs by Category
+
+  const fetchingBlogByCategory = async (slug) => {
+    const query = qs.stringify(
+      {
+        populate: [
+          "blogs",
+          "blogs.image",
+          "blogs.author",
+          "blogs.comments",
+          "blogs.author.profileImage",
+        ],
+      },
+      {
+        encodeValuesOnly: true, // prettify URL
+      }
+    );
+
+    const response = await axios.get(`/categories/${slug}?${query}`);
+    console.log();
   };
 
   useEffect(() => {

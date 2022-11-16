@@ -14,6 +14,7 @@ import PrintableForms from "./Components/Printableform/PrintableForms";
 import { useContext } from "react";
 import { pageContent } from "./ContextApi/PagesContext";
 import Loader from "./Components/Shared/Loader";
+import BlogCard from "./Components/Blog/BlogCard";
 
 function App() {
   const { dataLoaded } = useContext(pageContent);
@@ -31,7 +32,7 @@ function App() {
             <Route path="/blogs/:id" element={<SingleBlog />}></Route>
             <Route
               path="/categories/:categoryslug"
-              element={<SingleBlog />}
+              element={<BlogCard></BlogCard>}
             ></Route>
             <Route path="/services/:id" element={<ServiceSingle />}></Route>
             <Route path="/services" element={<Services />}></Route>
